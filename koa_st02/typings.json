@@ -1,0 +1,10 @@
+{
+  "name": "koa_st02",
+  "dependencies": {},
+  "globalDependencies": {
+    "cookies": "registry:dt/cookies#0.5.1+20160316171810",
+    "es2015-promise": "registry:env/es2015-promise#1.0.0+20160526151700",
+    "koa": "registry:dt/koa#2.0.0+20160724024233",
+    "node": "registry:env/node#6.0.0+20160723033700"
+  }
+}
