@@ -1,0 +1,23 @@
+{
+  "name": "koa_st01",
+  "version": "1.0.0",
+  "description": "koa study ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "compile": "tsc app.ts"
+  },
+  "author": "m0a",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "3.2.2",
+    "eslint-config-google": "0.6.0",
+    "koa": "2.0.0-alpha.4"
+  },
+  "dependencies": {
+    "@types/koa": "2.0.30",
+    "tslint": "3.14.0-dev.1",
+    "typescript": "2.0.0"
+  }
+}

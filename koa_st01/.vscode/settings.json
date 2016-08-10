@@ -1,0 +1,17 @@
+// 既定の設定とユーザー設定を上書きするには、このファイル内に設定を挿入します
+{
+	// タブ 1 つに相当するスペースの数。
+	"editor.tabSize": 2,
+
+	// Tab キーを押すとスペースが挿入されます。
+	"editor.insertSpaces": true,
+  // 使用する tsserver と lib*.d.ts ファイルが含まれているフォルダーのパスを指定します。
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // TS サーバーに送信されるメッセージのトレースをオンにします
+  "typescript.tsserver.trace": "off",
+
+  // 試験的な自動ビルドを有効にします。1.9 dev または 2.x tsserver バージョンと、変更後に VS Code の再起動が必要です。
+  "typescript.tsserver.experimentalAutoBuild": false
+
+}
