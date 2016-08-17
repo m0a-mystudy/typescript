@@ -1,0 +1,2 @@
+--recursive
+--compilers ts:espower-typescript/guess

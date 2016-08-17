@@ -1,0 +1,23 @@
+{
+  "name": "koa_st03",
+  "version": "0.0.1",
+  "description": "koa and typescript sample",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node dest/app.js"
+  },
+  "author": "m0a",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "0.11.10",
+    "koa": "2.0.0",
+    "mysql": "2.11.1"
+  },
+  "devDependencies": {
+    "espower-typescript": "5.0.1",
+    "mocha": "3.0.2",
+    "power-assert": "1.4.1",
+    "supertest": "2.0.0"
+  }
+}
