@@ -15,8 +15,6 @@ export function apiRoute(config: TableConfig[], prefix?: string): Router {
 	}
 	for (let tableConfig of config) {
 			// console.log(tableConfig.tableName);
-			console.log(`/${tableConfig.targetName}/`);
-			console.log(`/${tableConfig.targetName}/:id`);
 			router.get(`/${tableConfig.targetName}/`, listTarget(tableConfig.tableName));
 			router.get(`/${tableConfig.targetName}/:id`, showTarget(tableConfig.tableName));
 	}

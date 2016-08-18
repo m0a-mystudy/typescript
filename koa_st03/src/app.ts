@@ -26,19 +26,20 @@ function apiRoute(config: TableConfig[], prefix?: string): Router {
 }
 
 interface Midleware {
-	(ctx: Koa.Context, next?: () => any): void;
+	(ctx: Koa.Context, next?: () => any): any;
 }
 
 function listTarget(targetName: string): Midleware {
 	return function(ctx, next) {
 		ctx.body = `listTarget:${targetName}`;
-		next();
+		return next();
 	};
 }
 
 function showTarget(targetName: string): Midleware {
 	return function (ctx, next){
 		ctx.body = `showTarget:${targetName}, ${ctx}`;
+		return next();
 	};
 }
 
