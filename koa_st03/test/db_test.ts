@@ -75,8 +75,8 @@ import * as Knex from 'knex';
 	// 	});
 	// });
 
-	describe('test04', () => {
-		it('test04', () => {
+	describe('TypeScript仕様チェック', () => {
+		it('宣言方法確認1', (done) => {
 			let tables = [
 			'a',
 			'b',
@@ -92,8 +92,9 @@ import * as Knex from 'knex';
 			'c': [ 'c1', 'c2']
 			};
 			for (let table of tables) {
-				console.log(select_columns[table]);
+				// console.log(select_columns[table]);
 			}
+			done();
 		});
 	});
 
