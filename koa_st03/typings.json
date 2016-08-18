@@ -3,11 +3,15 @@
   "dependencies": {},
   "globalDependencies": {
     "bluebird": "registry:dt/bluebird#3.0.0+20160811111256",
+    "cookies": "registry:dt/cookies#0.5.1+20160316171810",
+    "empower": "registry:dt/empower#0.0.0+20160317120654",
     "knex": "registry:dt/knex#0.0.0+20160815132916",
     "koa": "registry:dt/koa#2.0.0+20160724024233",
+    "koa-router": "registry:dt/koa-router#7.0.0+20160812160355",
     "mocha": "registry:dt/mocha#2.2.5+20160720003353",
     "node": "registry:env/node#6.0.0+20160813135048",
     "power-assert": "registry:dt/power-assert#0.0.0+20160316155526",
+    "power-assert-formatter": "registry:dt/power-assert-formatter#0.0.0+20160317120654",
     "superagent": "registry:dt/superagent#2.0.0+20160811085415",
     "supertest": "registry:dt/supertest#1.1.0+20160724070541"
   }

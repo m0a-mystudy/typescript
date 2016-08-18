@@ -1,23 +1,23 @@
-import Calculator from '../src';
+// import Calculator from '../src';
 import * as assert from 'power-assert';
 import * as Knex from 'knex';
 
 
 
-describe('Calculator', () => {
-	let subject: Calculator;
+// describe('Calculator', () => {
+// 	let subject: Calculator;
 
-	beforeEach(function() {
-		subject = new Calculator();
-	});
+// 	beforeEach(function() {
+// 		subject = new Calculator();
+// 	});
 
-	describe('#add', () => {
-		it('should add two numbers together', () => {
-			let result: number = subject.add(2, 3);
-			assert(5 === result);
-		});
-	});
-});
+// 	describe('#add', () => {
+// 		it('should add two numbers together', () => {
+// 			let result: number = subject.add(2, 3);
+// 			assert(5 === result);
+// 		});
+// 	});
+// });
 
 // describe('knexテスト', () => {
 // 	let config = {
@@ -83,12 +83,15 @@ describe('Calculator', () => {
 			'c'
 			];
 
-			let select_columns = {
+			interface Columns {
+				[idx: string]: string[];
+			}
+			let select_columns: Columns = {
 			'a': ['a1', 'a2'],
 			'b': ['b1', 'b2'],
 			'c': [ 'c1', 'c2']
 			};
-			for (let table in tables) {
+			for (let table of tables) {
 				console.log(select_columns[table]);
 			}
 		});
