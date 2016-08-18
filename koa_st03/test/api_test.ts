@@ -1,17 +1,25 @@
 import * as supertest from 'supertest';
 import * as app from '../src/app';
-import {apiRoute, TableConfig} from '../src/api_route';
+import {apiRoute} from '../src/api_route';
 import * as Koa from 'koa';
 import * as assert from 'power-assert';
-
+import {CrudConfig} from '../src/config';
 
 describe('APIRouteテスト', () => {
-	let config: TableConfig[] = [
-		{
-			targetName: 'emp',
-			tableName: 'employee'
+	let config: CrudConfig = {
+		tables: [
+			{
+				targetName: 'emp',
+				tableName: 'employee'
+			},
+		],
+		list: {
+			'emp': [ ],
 		},
-	];
+		show: {
+			'emp': [ ],
+		},
+	};
 
 	let api_route = apiRoute(config, '/api/v1');
 	let app = new Koa();
@@ -23,7 +31,7 @@ describe('APIRouteテスト', () => {
 	});
 
 	it('get /emp/:id', (done) => {
-			req.get('/api/v1/emp/1').expect(200, done);
+			req.get('/api/v1/emp/1').expect(200).expect(JSON.stringify({id: 1}), done);
 	});
 
 
