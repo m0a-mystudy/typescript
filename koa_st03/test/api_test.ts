@@ -3,41 +3,50 @@ import * as app from '../src/app';
 import {ApiRouter} from '../src/api_router';
 import * as Koa from 'koa';
 import * as assert from 'power-assert';
-import {CrudConfig} from '../src/interfaces/config';
+// import {CrudConfig} from '../src/interfaces/config';
+import * as crudConfig from '../src/config/crud';
 
-describe('APIRouteテスト', () => {
-	let config: CrudConfig = {
-		tables: [
-			{
-				targetName: 'emp',
-				tableName: 'employee'
-			},
-		],
-		list: {
-			'emp': [ ],
-		},
-		show: {
-			'emp': [ ],
-		},
-	};
+
+describe('APIテスト', () => {
 
 	// let api_route = apiRoute(config, '/api/v1');
-	let apiRouter = new ApiRouter(config, '/api/v1');
-
+	let apiRouter = new ApiRouter(crudConfig, '/api/v1');
 	let app = new Koa();
-	// app.use(api_route.routes());
 	app.use(apiRouter.routes());
 
 	let req = supertest.agent(app.listen());
-	it('get /emp', (done) => {
+	it('get /api/v1/emp', (done) => {
 			req.get('/api/v1/emp')
-			.expect(200, done);
+			.expect('Content-Type', /json/)
+			.expect(200)
+			.expect((resp: supertest.Response) => {
+				assert.equal(resp.body.length, 10);
+				return resp;
+			})
+			.end(done);
+	});
+
+	it('get /api/v1/emp?limit=12&offset=3', (done) => {
+			req.get('/api/v1/emp?limit=12&offset=3')
+			.expect('Content-Type', /json/)
+			.expect(200)
+			.expect((resp: supertest.Response) => {
+				assert.equal(resp.body.length, 12);
+				return resp;
+			})
+			.end(done);
+
+
 	});
 
 	it('get /emp/:id', (done) => {
-			req.get('/api/v1/emp/1')
+			req.get('/api/v1/emp/10001')
 			.expect(200)
-			.expect(JSON.stringify({id: 1}), done);
+			.expect((r: supertest.Response) => {
+				assert.equal(r.body.emp_no, 10001);
+				return r;
+			})
+			.end(done);
 	});
 });
 

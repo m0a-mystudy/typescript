@@ -1,18 +1,31 @@
 "use strict";
 let crudConfig;
 crudConfig = {
-    tables: [
-        {
-            targetName: 'emp',
-            tableName: 'employee'
-        },
-    ],
-    list: {
-        'emp': [],
+    targets: ['emp'],
+    tables: {
+        'emp': 'employees',
     },
-    show: {
-        'emp': [],
-    },
+    schema: {
+        'emp': {
+            primaryKey: 'emp_no',
+            indexColumns: [
+                'emp_no',
+                'birth_date',
+                'first_name',
+                'last_name',
+                'gender',
+                'hire_date'
+            ],
+            viewColumns: [
+                'emp_no',
+                'birth_date',
+                'first_name',
+                'last_name',
+                'gender',
+                'hire_date',
+            ]
+        }
+    }
 };
 module.exports = crudConfig;
 //# sourceMappingURL=crud.js.map

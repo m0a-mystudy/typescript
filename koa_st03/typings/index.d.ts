@@ -10,3 +10,4 @@
 /// <reference path="globals/power-assert/index.d.ts" />
 /// <reference path="globals/superagent/index.d.ts" />
 /// <reference path="globals/supertest/index.d.ts" />
+/// <reference path="modules/debug/index.d.ts" />

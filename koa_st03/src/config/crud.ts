@@ -1,19 +1,33 @@
 import {CrudConfig} from '../interfaces/config';
+
 let crudConfig: CrudConfig;
 export = crudConfig;
 
 crudConfig = {
-		tables: [
-			{
-				targetName: 'emp',
-				tableName: 'employee'
-			},
-		],
-		list: {
-			'emp': [ ],
+		targets: ['emp'],
+		tables: {
+				'emp': 'employees',
 		},
-		show: {
-			'emp': [ ],
-		},
+		schema: {
+			'emp': {
+				primaryKey: 'emp_no',
+				indexColumns: [
+					'emp_no',
+					'birth_date',
+					'first_name',
+					'last_name',
+					'gender',
+					'hire_date'
+				],
+				viewColumns: [
+					'emp_no',
+					'birth_date',
+					'first_name',
+					'last_name',
+					'gender',
+					'hire_date',
+				]
+			}
+		}
 	};
 
