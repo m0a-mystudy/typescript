@@ -23,8 +23,9 @@ export function index(target: string, limit: number = 10, offset: number = 0): P
 
 export function view(target: string, id: number): Promise<any> {
 	let table = crudConfig.tables[target];
-	let selectColumns = crudConfig.schema[target].viewColumns;
-	let pk = crudConfig.schema[target].primaryKey;
+	let schema = crudConfig.schema[target];
+	let selectColumns = schema.viewColumns;
+	let pk = schema.primaryKey;
 	return new Promise<any>(resolve => {
 		resolve(
 			db.from(table)
