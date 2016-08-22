@@ -1,10 +1,10 @@
 import * as supertest from 'supertest';
-import * as app from '../src/app';
-import {ApiRouter} from '../src/api_router';
+import * as app from '../server/app';
+import {ApiRouter} from '../server/api_router';
 import * as Koa from 'koa';
 import * as assert from 'power-assert';
-// import {CrudConfig} from '../src/interfaces/config';
-import * as crudConfig from '../src/config/crud';
+// import {CrudConfig} from '../server/interfaces/config';
+import * as crudConfig from '../server/config/crud';
 
 
 describe('APIテスト', () => {

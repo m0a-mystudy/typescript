@@ -1,5 +1,5 @@
 import * as supertest from 'supertest';
-import {ApiRouter} from '../src/api_router';
+import {ApiRouter} from '../server/api_router';
 
 import * as Koa from 'koa';
 import * as Router from 'koa-router';

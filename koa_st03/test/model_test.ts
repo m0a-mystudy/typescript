@@ -1,5 +1,5 @@
 import * as assert from 'power-assert';
-import * as model from '../src/model';
+import * as model from '../server/model';
 
 describe('modelテスト', () => {
 

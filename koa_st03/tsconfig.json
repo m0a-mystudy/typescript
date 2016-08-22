@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"module": "commonjs",
 		"target": "es2015",
-		"sourceRoot": "src",
+		"sourceRoot": ".",
 		"outDir": "dest",
 		"noImplicitAny": true,
 		"noEmitOnError": false,
