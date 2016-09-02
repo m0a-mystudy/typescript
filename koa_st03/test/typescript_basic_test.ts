@@ -93,6 +93,7 @@ describe('仕様確認2', () => {
 			}
 			return 42;
 		};
+		done();
 	}); //it overload
 	it('Generic Types', done => {
 		let strArray = ['a', 'b', 'c'];
