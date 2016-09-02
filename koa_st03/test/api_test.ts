@@ -39,8 +39,9 @@ describe('APIテスト', () => {
 
 	});
 
-	it('get /emp/:id', (done) => {
+	it('get /api/v1/emp/10001', (done) => {
 			req.get('/api/v1/emp/10001')
+			.expect('Content-Type', /json/)
 			.expect(200)
 			.expect((r: supertest.Response) => {
 				assert.equal(r.body.emp_no, 10001);
