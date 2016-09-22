@@ -2,6 +2,7 @@
 /// <reference path="globals/cookies/index.d.ts" />
 /// <reference path="globals/empower/index.d.ts" />
 /// <reference path="globals/knex/index.d.ts" />
+/// <reference path="globals/koa-bodyparser/index.d.ts" />
 /// <reference path="globals/koa-router/index.d.ts" />
 /// <reference path="globals/koa/index.d.ts" />
 /// <reference path="globals/mocha/index.d.ts" />

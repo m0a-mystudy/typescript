@@ -29,6 +29,5 @@ if (process.env.NODE_ENV === 'production') {
   })];
 }
 /* global console */
-console.log(`path = ${path}`);
 
 module.exports = config;

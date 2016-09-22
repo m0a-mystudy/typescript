@@ -1,8 +1,10 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
+import * as bodyparser from 'koa-bodyparser';
 import {CrudConfig} from './interfaces/config';
 // import {crud} from './model';
 import * as model from './model';
+
 import * as Debug from 'debug';
 let debug = Debug('mycrud');
 
@@ -25,6 +27,7 @@ export class ApiRouter extends Router {
 			// console.log(tableConfig.tableName);
 			this.get(`/${target}/`, this.index(target));
 			this.get(`/${target}/:id`, this.view(target));
+			this.post(`/${target}/`, bodyparser(), this.create(target));
 		}
 	}
 
@@ -40,12 +43,19 @@ export class ApiRouter extends Router {
 		};
 	}
 	private view(target: string): Midleware {
-	return async function (ctx, next) {
+	return async function(ctx, next) {
 			// ctx.body = `showTarget:${tableName}, ${ctx.params.id}`;
 			// ctx.body = {id: parseInt(ctx.params.id)};
 			let id: number = parseInt(ctx.params.id);
 			ctx.body = await model.view(target, id);
 			return next();
+		};
+	}
+	private create(target: string): Midleware {
+		return async function(ctx, next) {
+			let body = (<any>ctx.request).body;
+			console.log(JSON.stringify(body));
+			ctx.body = await model.create(target, body);
 		};
 	}
 }

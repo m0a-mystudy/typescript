@@ -35,3 +35,15 @@ export function view(target: string, id: number): Promise<any> {
 		);
 	});
 }
+
+export function create(target: string, data: Object): Promise<any> {
+	let table = crudConfig.tables[target];
+	let schema = crudConfig.schema[target];
+	let selectColumns = schema.viewColumns;
+	let pk = schema.primaryKey;
+	return new Promise<any> (resolve => {
+		resolve(
+			db.insert(data).into(table)
+		);
+	});
+}
