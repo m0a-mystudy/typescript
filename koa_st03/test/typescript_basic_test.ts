@@ -94,7 +94,7 @@ describe('仕様確認2', () => {
 			return 42;
 		};
 		done();
-	}); //it overload
+	}); // it overload
 	it('Generic Types', done => {
 		let strArray = ['a', 'b', 'c'];
 		let numArray: Array<number> = [1, 2, 3];
@@ -102,7 +102,7 @@ describe('仕様確認2', () => {
 		strArray.forEach(v => v.charAt(0));
 		numArray.forEach(v => v.toFixed(2));
 		done();
-	}); //Generic Types
+	}); // Generic Types
 
 	it('tuple', done => {
 		function zip<T1, T2>(v1: T1, v2: T2): [T1, T2] {
@@ -115,6 +115,15 @@ describe('仕様確認2', () => {
 		done();
 
 	});
+});
 
-
+describe('typescript2.0', () => {
+	it('type2.0', done => {
+		let a: string  = 'null';
+		// a = null;
+		// a = undefined;
+		a = 'a';
+		console.log(a);
+		done();
+	});
 });

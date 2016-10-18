@@ -39,11 +39,33 @@ export function view(target: string, id: number): Promise<any> {
 export function create(target: string, data: Object): Promise<any> {
 	let table = crudConfig.tables[target];
 	let schema = crudConfig.schema[target];
-	let selectColumns = schema.viewColumns;
-	let pk = schema.primaryKey;
-	return new Promise<any> (resolve => {
+	return new Promise<any>(resolve => {
 		resolve(
 			db.insert(data).into(table)
+		);
+	});
+}
+
+export function update(target: string, pk_id: number, data: Object): Promise<any> {
+	let table = crudConfig.tables[target];
+	let schema = crudConfig.schema[target];
+	let pk = schema.primaryKey;
+	return new Promise<any>(resolve => {
+		// console.log('in update');
+		// console.log(`data=${JSON.stringify(data)}, table=${JSON.stringify(table)}, pk=${pk}, pk_id=${pk_id}`);
+		resolve(
+			db.update(data).from(table).where(pk, pk_id)
+		);
+	});
+}
+
+export function remove(target: string, pk_id: number): Promise<any> {
+	let table = crudConfig.tables[target];
+	let schema = crudConfig.schema[target];
+	let pk = schema.primaryKey;
+	return new Promise<any>(resolve => {
+		resolve(
+			db.from(table).where(pk, pk_id).delete()
 		);
 	});
 }

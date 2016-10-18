@@ -27,6 +27,53 @@ describe('modelテスト', () => {
 			return result;
 		});
 	});
+
+	let pk_id_test = 500080;
+it(`if exist ${pk_id_test} then delete it.`, () => {
+		return model.view('emp', pk_id_test).then(result => {
+			console.log('in model.view');
+			if (result) {
+				return model.remove('emp', pk_id_test);
+			}
+			return null;
+		});
+	});
+
+
+	it('create', () => {
+		return model.create('emp', {
+			emp_no: pk_id_test,
+			first_name: 'makoto',
+			last_name: 'abe',
+			birth_date: '2001-10-03',
+			hire_date: '2009-10-03'
+		});
+	});
+
+	it('update', () => {
+		return model.update('emp', pk_id_test, {
+			first_name: 'makoto(update)'
+		}).then(result => {
+			console.log('in update test');
+			console.log(result);
+			return result;
+		}).catch(err => {
+			console.log(err);
+		});
+	});
+
+	it('update data select', () => {
+		return model.view('emp', pk_id_test).then( result => {
+			console.log(result);
+			return result;
+		});
+	});
+
+	it('delete', () => {
+		return model.remove('emp', pk_id_test);
+	});
+
+
 });
 
 

@@ -57,4 +57,42 @@ describe('TypeScript仕様チェック', () => {
         done();
     });
 });
+describe('仕様確認2', () => {
+    it('overload', done => {
+        let obj;
+        obj = (word) => {
+            if (typeof word === 'string') {
+                return `Hello, ${word}`;
+            }
+            return 42;
+        };
+        done();
+    }); // it overload
+    it('Generic Types', done => {
+        let strArray = ['a', 'b', 'c'];
+        let numArray = [1, 2, 3];
+        strArray.forEach(v => v.charAt(0));
+        numArray.forEach(v => v.toFixed(2));
+        done();
+    }); // Generic Types
+    it('tuple', done => {
+        function zip(v1, v2) {
+            return [v1, v2];
+        }
+        let tuple = zip('str', { hello: () => 'Hello!' });
+        tuple[0].charAt(1);
+        tuple[1].hello();
+        done();
+    });
+});
+describe('typescript2.0', () => {
+    it('type2.0', done => {
+        let a = 'null';
+        // a = null;
+        // a = undefined;
+        a = 'a';
+        console.log(a);
+        done();
+    });
+});
 //# sourceMappingURL=typescript_basic_test.js.map

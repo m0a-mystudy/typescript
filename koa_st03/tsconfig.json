@@ -6,6 +6,8 @@
 		"outDir": "dest",
 		"noImplicitAny": true,
 		"noEmitOnError": false,
+		// "strictNullChecks": true,
+		// "noImplicitThis": true,
 		"sourceMap": true
 	},
 	"exclude": [

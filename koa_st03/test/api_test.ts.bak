@@ -62,10 +62,12 @@ describe('APIテスト(c)', () => {
 	it('post /api/v1/emp', (done) => {
 			req.post('/api/v1/emp')
 			.send({
+					emp_no: 30001,
 					birth_date: '1979-08-11',
 					first_name: 'makoto',
 					last_name: 'abe',
-					gender: 'M'
+					gender: 'M',
+					hire_date: '2003-10-03'
 			})
 			.expect(200)
 			.expect((resp: supertest.Response) => {
@@ -76,28 +78,5 @@ describe('APIテスト(c)', () => {
 			.end(done);
 	});
 
-	it('get /api/v1/emp?limit=12&offset=3', (done) => {
-			req.get('/api/v1/emp?limit=12&offset=3')
-			.expect('Content-Type', /json/)
-			.expect(200)
-			.expect((resp: supertest.Response) => {
-				assert.equal(resp.body.length, 12);
-				return resp;
-			})
-			.end(done);
-
-
-	});
-
-	it('get /api/v1/emp/10001', (done) => {
-			req.get('/api/v1/emp/10001')
-			.expect('Content-Type', /json/)
-			.expect(200)
-			.expect((r: supertest.Response) => {
-				assert.equal(r.body.emp_no, 10001);
-				return r;
-			})
-			.end(done);
-	});
 });
 

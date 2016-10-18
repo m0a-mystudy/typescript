@@ -39,6 +39,7 @@ export class ApiRouter extends Router {
 			} = parseQuery(ctx.query);
 			// ctx.body = `listTarget:${target}`;
 			ctx.body = await model.index(target, limit, offset);
+			if (next)
 			return next();
 		};
 	}
@@ -48,6 +49,7 @@ export class ApiRouter extends Router {
 			// ctx.body = {id: parseInt(ctx.params.id)};
 			let id: number = parseInt(ctx.params.id);
 			ctx.body = await model.view(target, id);
+			if (next)
 			return next();
 		};
 	}

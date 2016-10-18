@@ -4,6 +4,8 @@
 		"target": "es2015",
 		"noImplicitAny": true,
 		"noEmitOnError": false,
+		"strictNullChecks": true,
+		"noImplicitThis": true,
 		"sourceMap": true
 	},
 	"exclude": [
