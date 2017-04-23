@@ -4,6 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "dev": "cp src/*.js dist/ && tsc && tsc -d",
+    "prestart": "yarn run dev",
     "start": "node dist/index.js",
     "test": "jest"
   },
