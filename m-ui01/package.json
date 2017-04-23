@@ -1,0 +1,26 @@
+{
+  "name": "m-ui01",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^19.2.2",
+    "@types/node": "^6.0.69",
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^0.14.23",
+    "material-ui": "0.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-tap-event-plugin": "2.0.1"
+  },
+  "devDependencies": {
+    "@types/material-ui": "0.17.0",
+    "@types/react-tap-event-plugin": "0.0.30",
+    "react-scripts-ts": "1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}
