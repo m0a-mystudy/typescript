@@ -4,7 +4,8 @@ import * as React from 'react';
 import {TranslationCell} from './TranslationCell';
 
 
-interface TranslationEditorProps {
+
+interface TranslationEditorProps  extends  React.Props<{}> {
 	content: Content;
 }
 export const TranslationEditor = (props: TranslationEditorProps) => {
