@@ -42,13 +42,6 @@ const Checkbox = (props:CheckboxProps) => (
 	</div>
 );
 
-// const style :React.CSSProperties = {
-// 	fontSize: '8px',
-// 	paddingLeft: '10px',
-// 	paddingTop: '10px'
-	
-// };
-
 export const TranslationCell = (props: TranslationCellProps) => (
 	<ui.Card style={{
 		marginBottom: '10px'

@@ -34,57 +34,6 @@ const styles: React.CSSProperties = {
   },
 };
 
-/*function handleActive(tab: ui.Tab) {
-  alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
-}
-
-const MenuExample = () => (
-  <ui.Tabs>
-    <ui.Tab label="翻訳リスト" >
-      <div>
-        <p>
-          thiis a pen.
-        </p>
-        <p>
-          これはペンです。
-        </p>
-
-      </div>
-    </ui.Tab>
-    <ui.Tab label="翻訳編集" >
-      <div>
-        <h2 style={styles.headline}>Tab Two</h2>
-        <p>
-          This is another example tab.
-        </p>
-      </div>
-    </ui.Tab>
-    <ui.Tab
-      label="設定"
-      data-route="/home"
-      onActive={handleActive}
-    >
-      <div>
-        <h2 style={styles.headline}>Tab Three</h2>
-        <p>
-          This is a third example tab.
-        </p>
-      </div>
-    </ui.Tab>
-  </ui.Tabs>
-);*/
-
-
-
-
-/*const App = () => (
-  <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-    <MenuExample />
-  </MuiThemeProvider>
-);*/
-
-
-
 
 
 

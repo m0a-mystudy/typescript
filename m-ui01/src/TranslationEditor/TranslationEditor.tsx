@@ -17,8 +17,10 @@ export const TranslationEditor = (props: TranslationEditorProps) => {
 			<div>
 				{
 					content.pairs.map(pair => 
-					<TranslationCell pair={pair} 
+					<TranslationCell 
+					pair={pair} 
 					index={content.pairs.indexOf(pair)} 
+					key={`${content.pairs.indexOf(pair)}:${pair.prevHash}`}
 					/>)
 				}
 			</div>
