@@ -3,6 +3,8 @@ import { TransPair, toString, parseText, TaiyakuNode } from 'taiyaku-node';
 import * as ui from 'material-ui';
 import * as React from 'react';
 
+import {Button} from './Button';
+
 
 const CheckBoxLine = (props: React.Props<void>) => (
 	<div style={{
@@ -38,22 +40,6 @@ const Checkbox = (props: CheckboxProps) => (
 	</div>
 );
 
-interface ButtonProps {
-	label: string;
-	onClick?: () => void;
-	disabled?: boolean;
-}
-
-const Button = (props: ButtonProps) => (
-	<ui.RaisedButton
-		label={props.label}
-		onClick={props.onClick}
-		disabled={props.disabled}
-		style={{
-			marginLeft: '5px'
-		}}
-	/>
-);
 
 
 interface TranslationCellProps {
