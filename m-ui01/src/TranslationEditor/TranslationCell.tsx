@@ -59,6 +59,7 @@ const Button = (props: ButtonProps) => (
 interface TranslationCellProps {
 	pair: TransPair;
 	index: number;
+	onReflect?:(newPair:TransPair)=>void;
 }
 
 interface TranslationCellState {
@@ -125,13 +126,12 @@ export class TranslationCell extends React.Component<TranslationCellProps, Trans
 				onChange={(e: React.FormEvent<{}>, newValue: string) => {
 					let parse = parseText(newValue, props.pair);
 					if (parse.result) {
-						this.setState(Object.assign(this.state, {
+						this.setState({
 							transText: newValue,
-							node: parse.node,
+							newNode:parse.node,
 							errorText: ''
-						}));
+						});
 					} else {
-
 						this.setState(Object.assign(this.state, {
 							transText: newValue,
 							errorText: parse.message
@@ -144,6 +144,19 @@ export class TranslationCell extends React.Component<TranslationCellProps, Trans
 				<Checkbox label={'翻訳対象'} checked={!props.pair.dontTranslate} />
 				<Button label={'反映'}
 					disabled={(!this.isEditing() || this.hasError())}
+					onClick={
+						()=>{
+							{/*console.log(`in onclick ${this.state.newNode} ${props.onReflect}`);*/}
+							
+							if(this.state.newNode && props.onReflect){
+								
+								let newPair = Object.assign<TransPair,{}>(props.pair,{
+									translation:this.state.newNode
+								});
+								props.onReflect(newPair);
+							}
+						}
+					}
 				/>
 				<Button label={'リセット'}
 					disabled={!this.isEditing()}

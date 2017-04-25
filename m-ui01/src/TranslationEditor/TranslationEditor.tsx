@@ -22,6 +22,9 @@ export const TranslationEditor = (props: TranslationEditorProps) => {
 						pair={pair} 
 						index={content.pairs.indexOf(pair)} 
 						key={`${content.pairs.indexOf(pair)}:${pair.prevHash}`}
+						onReflect={(newPair)=>{
+							console.log(`newPair = ${JSON.stringify(newPair)}`);
+						}}
 					/>)
 				}
 			</div>
