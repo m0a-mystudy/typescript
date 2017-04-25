@@ -1,9 +1,7 @@
 import * as t from 'taiyaku-node';
-import { TransPair, toString } from 'taiyaku-node';
+import { TransPair, toString, parseText, TaiyakuNode } from 'taiyaku-node';
 import * as ui from 'material-ui';
 import * as React from 'react';
-
-
 
 
 const CheckBoxLine = (props: React.Props<void>) => (
@@ -15,6 +13,7 @@ const CheckBoxLine = (props: React.Props<void>) => (
 		{props.children}
 	</div>
 );
+
 
 interface CheckboxProps {
 	label: string;
@@ -32,11 +31,30 @@ const Checkbox = (props: CheckboxProps) => (
 			style={{
 				fontSize: "12px",
 				width: `${30 * props.label.length}px`,
+				paddingTop: '5px',
 				paddingLeft: '15px'
 			}}
 		/>
 	</div>
 );
+
+interface ButtonProps {
+	label: string;
+	onClick?: () => void;
+	disabled?: boolean;
+}
+
+const Button = (props: ButtonProps) => (
+	<ui.RaisedButton
+		label={props.label}
+		onClick={props.onClick}
+		disabled={props.disabled}
+		style={{
+			marginLeft: '5px'
+		}}
+	/>
+);
+
 
 interface TranslationCellProps {
 	pair: TransPair;
@@ -45,8 +63,9 @@ interface TranslationCellProps {
 
 interface TranslationCellState {
 	transText: string;
+	newNode?: TaiyakuNode;
+	errorText: string;
 }
-
 
 
 export class TranslationCell extends React.Component<TranslationCellProps, TranslationCellState> {
@@ -55,15 +74,26 @@ export class TranslationCell extends React.Component<TranslationCellProps, Trans
 		let transText = props.pair.translation;
 		if (transText) {
 			this.state = {
-				transText: toString(transText)
+				transText: toString(transText),
+				errorText: ''
+
 			};
 		} else {
 			this.state = {
-				transText: ''
+				transText: '',
+				errorText: ''
 			};
 		}
 
 	}
+	isEditing() {
+		let props = this.props;
+		return !(props.pair.translation && this.state.transText === toString(props.pair.translation));
+	}
+	hasError() {
+		return this.state.errorText !== '';
+	}
+
 	render() {
 		let props = this.props;
 		return (<ui.Card style={{
@@ -86,26 +116,43 @@ export class TranslationCell extends React.Component<TranslationCellProps, Trans
 					{
 						fontSize: "12px",
 						paddingLeft: "15px",
+						width: "500px"
 					}
 				}
-				fullWidth={true}
+				fullWidth={false}
 				multiLine={true}
+				errorText={this.state.errorText}
 				onChange={(e: React.FormEvent<{}>, newValue: string) => {
-					this.setState(Object.assign(this.state, {
-						transText: newValue
-					}));
+					let parse = parseText(newValue, props.pair);
+					if (parse.result) {
+						this.setState(Object.assign(this.state, {
+							transText: newValue,
+							node: parse.node,
+							errorText: ''
+						}));
+					} else {
+
+						this.setState(Object.assign(this.state, {
+							transText: newValue,
+							errorText: parse.message
+						}));
+					}
 					return;
 				}}
 			/>
 			<CheckBoxLine>
 				<Checkbox label={'翻訳対象'} checked={!props.pair.dontTranslate} />
-				<ui.RaisedButton label={'反映'} />
-				<ui.RaisedButton label={'リセット'}
+				<Button label={'反映'}
+					disabled={(!this.isEditing() || this.hasError())}
+				/>
+				<Button label={'リセット'}
+					disabled={!this.isEditing()}
 					onClick={
 						() => {
 							if (props.pair.translation) {
 								this.setState({
-									transText: toString(props.pair.translation)
+									transText: toString(props.pair.translation),
+									errorText: ''
 								});
 							}
 						}
