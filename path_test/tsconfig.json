@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "rootDir": "src",
+        "baseUrl": "src",
+        "outDir": "dist",
+        "paths": {
+            "/deep/*":["deep/*"]
+        },
+        "noImplicitAny": false,
+        "sourceMap": false
+    }
+}
