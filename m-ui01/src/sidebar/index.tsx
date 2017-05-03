@@ -58,10 +58,9 @@ class App extends React.Component<AppProps, {}> {
       counter,
       translationEditor
      } = this.props;
-    // let content = this.state.content;
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
-        <ui.Tabs initialSelectedIndex={2} >
+        <ui.Tabs initialSelectedIndex={0} >
           <ui.Tab label="翻訳編集" >
             <TranslationEditor
 

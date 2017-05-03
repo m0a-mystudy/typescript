@@ -1,17 +1,15 @@
-//
-
-// import { Content} from 'taiyaku-node';
 import * as React from 'react';
-import {TranslationCell} from './TranslationCell';
-import TranslationSelect from './TranslationSelect';
-import {Button} from './Button';
 import * as Redux from 'redux';
 
-// import { ContentInfo } from '../../storage';
+
+import {TranslationList} from './TranslationList';
+import TranslationSelect from './TranslationSelect';
+import {Button} from '../Button';
 
 import {TranslationEditorState} from '../../reducers/translationEditor';
 
-
+const font12px = {fontSize:'12px'};
+const paddingLeft =  {paddingLeft: '5px'};
 
 const Line = (props: React.Props<void>) => (
 	<div style={{
@@ -24,14 +22,15 @@ const Line = (props: React.Props<void>) => (
 );
 
 
-interface TranslationEditorProps  extends  React.Props<{}> {
+interface TranslationEditorProps  extends  React.Props<void> {
   dispatch:Redux.Dispatch<TranslationEditorState>;
   state: TranslationEditorState;
-	// contentInfo: ContentInfo;
 }
+
+
 export const TranslationEditor = (props: TranslationEditorProps) => {
   const {
-    dispatch,
+    // dispatch,
     state
   } = props;
   const content = state.contentInfo.contentList[state.contentInfo.selectId];
@@ -52,16 +51,13 @@ export const TranslationEditor = (props: TranslationEditorProps) => {
         />
       </div>;
   }
-console.log(dispatch);
 
 	return (
 		<div>
-			<div style={{
-				paddingLeft: '5px'
-			}}>
-			<p style={{fontSize:'12px'}}>owner is {content.mine ? 'You' : 'other'}</p>
-			<p style={{fontSize:'12px'}}> url: {content.url}</p>
-			<p style={{fontSize:'12px'}}> created: {content.created}</p>
+			<div style={paddingLeft} >
+			<p style={font12px}> owner is {content.mine ? 'You' : 'other'}</p>
+			<p style={font12px}> url: {content.url}</p>
+			<p style={font12px}> created: {content.created}</p>
 			</div>
 			<TranslationSelect />
 			<Line>
@@ -86,18 +82,9 @@ console.log(dispatch);
         }} />
 
 			</Line>
-			<div>
-				{
-					content.pairs.map(pair =>
-					<TranslationCell
-						pair={pair}
-						index={content.pairs.indexOf(pair)}
-						key={`${content.pairs.indexOf(pair)}:${pair.prevHash}`}
-						onReflect={(newPair)=>{
-							console.log(`newPair = ${JSON.stringify(newPair)}`);
-						}}
-					/>)
-				}
-			</div>
+			<TranslationList content={content} onChange={(index,pair)=>{
+          console.log(`index = ${index},pair = ${JSON.stringify(pair)}`);
+
+        }} />
 		</div>);
 };

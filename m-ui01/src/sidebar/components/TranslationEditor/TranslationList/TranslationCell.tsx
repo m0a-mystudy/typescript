@@ -3,7 +3,7 @@ import { TransPair, toString, parseText, TaiyakuNode } from 'taiyaku-node';
 import * as ui from 'material-ui';
 import * as React from 'react';
 
-import {Button} from './Button';
+import {Button} from '../../Button';
 
 
 const CheckBoxLine = (props: React.Props<void>) => (
@@ -133,9 +133,9 @@ export class TranslationCell extends React.Component<TranslationCellProps, Trans
 					onClick={
 						()=>{
 							{/*console.log(`in onclick ${this.state.newNode} ${props.onReflect}`);*/}
-							
+
 							if(this.state.newNode && props.onReflect){
-								
+
 								let newPair = Object.assign<TransPair,{}>(props.pair,{
 									translation:this.state.newNode
 								});
