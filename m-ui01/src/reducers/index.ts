@@ -16,12 +16,12 @@ export function counter(state: CountState = initCountState, action: Action) {
     case 'SYNC_COUNT_UP':
       return Object.assign({}, state, <CountState>{
         count: state.count + 1,
-        setCounting:false
+        setCounting: false
       });
     case 'SYNC_COUNT_DOWN':
       return Object.assign({}, state, <CountState>{
-        count: state.count -1,
-        setCounting:false
+        count: state.count - 1,
+        setCounting: false
       });
     case 'COUNT_UP_START':
     case 'COUNT_DOWN_START':

@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import { counter } from './reducers';
-import { createStore, applyMiddleware } from 'redux';
+// import { createStore, applyMiddleware } from 'redux';
 
 import thunkMiddleware from 'redux-thunk';
 
@@ -12,8 +12,15 @@ import thunkMiddleware from 'redux-thunk';
 //   (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
-let store = createStore(counter,
-applyMiddleware(thunkMiddleware));
+  import { createStore, applyMiddleware, compose } from 'redux';
+
+const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(counter, /* preloadedState, */ composeEnhancers(
+    applyMiddleware(thunkMiddleware)
+  ));
+
+// let store = createStore(counter,
+// applyMiddleware(thunkMiddleware));
 
 
 ReactDOM.render(
