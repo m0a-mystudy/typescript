@@ -2,8 +2,8 @@ import * as ui from 'material-ui';
 // tslint:disable-next-line:no-unused-variable
 import * as React from 'react';
 import * as Redux from 'redux';
-import { CountState } from '../reducers/count';
-import { asyncCountDown, asyncCountUp } from '../actions/count';
+import { CountState } from '../sidebar/reducers/count';
+import { asyncCountDown, asyncCountUp } from '../sidebar/actions/count';
 
 
 interface DebugProps extends React.Props<void> {

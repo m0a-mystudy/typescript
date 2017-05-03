@@ -6,27 +6,37 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import * as ui from 'material-ui';
-import { sample } from './pegjs.sample';
-import { newContent } from 'taiyaku-node';
-import { TranslationEditor } from './TranslationEditor';
-import Debug from './Debug';
+
+import { TranslationEditor } from './components/TranslationEditor';
+import { TranslationEditorState } from './reducers/translationEditor';
+
+import Debug from '../Debug';
 // import {  asyncCountUp, asyncCountDown } from './actions/count';
 // import reducer from './reducers';
-import {CountState} from './reducers/count';
+import { CountState } from './reducers/count';
 import * as ReactRedux from 'react-redux';
 // import * as Redux from 'redux';
+
+import { sample } from '../pegjs.sample';
+import { newContent } from 'taiyaku-node';
+import {setContent} from './actions/translationEditor';
 
 
 // type ASYNC_ACTION = ((dispatch: Redux.Dispatch<Action>) => void);
 
 interface AppProps extends React.Props<{}> {
   dispatch: any;
-  counter:CountState;
+  counter: CountState;
+  translationEditor: TranslationEditorState;
 };
 
-function mapStateToProps(state: {counter: CountState}) {
+function mapStateToProps(state: {
+  counter: CountState,
+  translationEditor: TranslationEditorState
+}) {
   return {
-    counter: state.counter
+    counter: state.counter,
+    translationEditor: state.translationEditor
   };
 }
 
@@ -34,17 +44,31 @@ class App extends React.Component<AppProps, {}> {
   constructor(props: AppProps) {
     super(props);
   }
-  render() {
+
+  componentDidMount() {
     let body = document.createElement('body');
     body.innerHTML = sample;
     let content = newContent('pegjs.org', body);
-    const { dispatch, counter } = this.props;
+    this.props.dispatch(setContent(content));
+
+  }
+  render() {
+    const {
+      dispatch,
+      counter,
+      translationEditor
+     } = this.props;
     // let content = this.state.content;
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
         <ui.Tabs initialSelectedIndex={2} >
           <ui.Tab label="翻訳編集" >
-            <TranslationEditor content={content} />
+            <TranslationEditor
+
+              state={translationEditor}
+              dispatch={dispatch}
+
+            />
           </ui.Tab>
           <ui.Tab label="翻訳リスト" >
             <div>

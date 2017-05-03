@@ -1,5 +1,6 @@
 // import { ThunkAction } from 'redux-thunk';
 // import { Dispatch } from 'redux';
+import {Content} from 'taiyaku-node';
 
 export type Action =
   {
@@ -13,6 +14,16 @@ export type Action =
   } |
   {
     type: 'COUNT_DOWN_START'
+  } |
+  //コンテンツ設定
+  {
+    type: 'SET_CONTENT';
+    content: Content;
+  }|
+  //コンテンツ選択
+  {
+    type: 'SELECT_CONTENT_ID';
+    id: string;
   }
   ;
 
