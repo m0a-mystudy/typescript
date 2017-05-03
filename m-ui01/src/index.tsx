@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
-import { counter } from './reducers';
+import reducer from './reducers';
 // import { createStore, applyMiddleware } from 'redux';
 
 import thunkMiddleware from 'redux-thunk';
@@ -15,7 +15,7 @@ import thunkMiddleware from 'redux-thunk';
   import { createStore, applyMiddleware, compose } from 'redux';
 
 const composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(counter, /* preloadedState, */ composeEnhancers(
+const store = createStore(reducer, /* preloadedState, */ composeEnhancers(
     applyMiddleware(thunkMiddleware)
   ));
 
