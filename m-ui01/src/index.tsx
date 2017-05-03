@@ -4,11 +4,17 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
 import { counter } from './reducers';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+
+import thunkMiddleware from 'redux-thunk';
+
+// let store = createStore(counter,
+//   (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+// );
 
 let store = createStore(counter,
-  (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
-);
+applyMiddleware(thunkMiddleware));
+
 
 ReactDOM.render(
   <Provider store={store}>

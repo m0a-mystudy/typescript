@@ -13,20 +13,24 @@ import { sample } from './pegjs.sample';
 
 import { newContent } from 'taiyaku-node';
 import { TranslationEditor } from './TranslationEditor';
-import { Action, countUp, countDown } from './actions/types';
+import {  asyncCountUp, asyncCountDown } from './actions/types';
 import { CountState } from './reducers';
 import * as ReactRedux from 'react-redux';
+// import * as Redux from 'redux';
 
 
+// type ASYNC_ACTION = ((dispatch: Redux.Dispatch<Action>) => void);
 
 interface AppProps extends React.Props<{}> {
-  dispatch: (action: Action) => void;
+  dispatch: any;
   count: number;
+  disable: boolean;
 };
 
 function select(state: CountState) {
   return {
-    count: state.count
+    count: state.count,
+    disable: state.setCounting
   };
 }
 
@@ -41,7 +45,7 @@ class App extends React.Component<AppProps, {}> {
     let body = document.createElement('body');
     body.innerHTML = sample;
     let content = newContent('pegjs.org', body);
-    const { dispatch, count } = this.props;
+    const { dispatch, count, disable } = this.props;
     // let content = this.state.content;
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
@@ -66,8 +70,11 @@ class App extends React.Component<AppProps, {}> {
             <div>
               <h2 >Debug目的</h2>
               <h3>count = {count} </h3>
-              <ui.RaisedButton label={'countup'} onClick={() => dispatch(countUp())} />
-              <ui.RaisedButton label={'countdown'} onClick={() => dispatch(countDown())} />
+              <ui.RaisedButton label={'countup'}
+                onClick={() => dispatch(asyncCountUp())}
+                disabled={disable}
+              />
+              <ui.RaisedButton label={'countdown'} onClick={() => dispatch(asyncCountDown())} disabled={disable} />
             </div>
           </ui.Tab>
         </ui.Tabs>
