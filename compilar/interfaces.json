@@ -1,0 +1,2832 @@
+[
+    {
+        "name": "Object",
+        "documentation": "Provides functionality common to all JavaScript objects.",
+        "type": "ObjectConstructor"
+    },
+    {
+        "name": "Function",
+        "documentation": "Creates a new function.",
+        "type": "FunctionConstructor"
+    },
+    {
+        "name": "String",
+        "documentation": "Allows manipulation and formatting of text strings and determination and location of substrings within strings.",
+        "type": "StringConstructor"
+    },
+    {
+        "name": "Boolean",
+        "documentation": "",
+        "type": "BooleanConstructor"
+    },
+    {
+        "name": "Number",
+        "documentation": "An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. ",
+        "type": "NumberConstructor"
+    },
+    {
+        "name": "Math",
+        "documentation": "An intrinsic object that provides basic mathematics functionality and constants. ",
+        "type": "Math"
+    },
+    {
+        "name": "Date",
+        "documentation": "Enables basic storage and retrieval of dates and times. ",
+        "type": "DateConstructor"
+    },
+    {
+        "name": "RegExp",
+        "documentation": "",
+        "type": "RegExpConstructor"
+    },
+    {
+        "name": "Error",
+        "documentation": "",
+        "type": "ErrorConstructor"
+    },
+    {
+        "name": "EvalError",
+        "documentation": "",
+        "type": "EvalErrorConstructor"
+    },
+    {
+        "name": "RangeError",
+        "documentation": "",
+        "type": "RangeErrorConstructor"
+    },
+    {
+        "name": "ReferenceError",
+        "documentation": "",
+        "type": "ReferenceErrorConstructor"
+    },
+    {
+        "name": "SyntaxError",
+        "documentation": "",
+        "type": "SyntaxErrorConstructor"
+    },
+    {
+        "name": "TypeError",
+        "documentation": "",
+        "type": "TypeErrorConstructor"
+    },
+    {
+        "name": "URIError",
+        "documentation": "",
+        "type": "URIErrorConstructor"
+    },
+    {
+        "name": "JSON",
+        "documentation": "An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.",
+        "type": "JSON"
+    },
+    {
+        "name": "Array",
+        "documentation": "",
+        "type": "ArrayConstructor"
+    },
+    {
+        "name": "ArrayBuffer",
+        "documentation": "Represents a raw buffer of binary data, which is used to store data for the\ndifferent typed arrays. ArrayBuffers cannot be read from or written to directly,\nbut can be passed to a typed array or DataView Object to interpret the raw\nbuffer as needed.",
+        "type": "ArrayBufferConstructor"
+    },
+    {
+        "name": "DataView",
+        "documentation": "",
+        "type": "DataViewConstructor"
+    },
+    {
+        "name": "Int8Array",
+        "documentation": "A typed array of 8-bit integer values. The contents are initialized to 0. If the requested\nnumber of bytes could not be allocated an exception is raised.",
+        "type": "Int8ArrayConstructor"
+    },
+    {
+        "name": "Uint8Array",
+        "documentation": "A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If the\nrequested number of bytes could not be allocated an exception is raised.",
+        "type": "Uint8ArrayConstructor"
+    },
+    {
+        "name": "Uint8ClampedArray",
+        "documentation": "A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0.\nIf the requested number of bytes could not be allocated an exception is raised.",
+        "type": "Uint8ClampedArrayConstructor"
+    },
+    {
+        "name": "Int16Array",
+        "documentation": "A typed array of 16-bit signed integer values. The contents are initialized to 0. If the\nrequested number of bytes could not be allocated an exception is raised.",
+        "type": "Int16ArrayConstructor"
+    },
+    {
+        "name": "Uint16Array",
+        "documentation": "A typed array of 16-bit unsigned integer values. The contents are initialized to 0. If the\nrequested number of bytes could not be allocated an exception is raised.",
+        "type": "Uint16ArrayConstructor"
+    },
+    {
+        "name": "Int32Array",
+        "documentation": "A typed array of 32-bit signed integer values. The contents are initialized to 0. If the\nrequested number of bytes could not be allocated an exception is raised.",
+        "type": "Int32ArrayConstructor"
+    },
+    {
+        "name": "Uint32Array",
+        "documentation": "A typed array of 32-bit unsigned integer values. The contents are initialized to 0. If the\nrequested number of bytes could not be allocated an exception is raised.",
+        "type": "Uint32ArrayConstructor"
+    },
+    {
+        "name": "Float32Array",
+        "documentation": "A typed array of 32-bit float values. The contents are initialized to 0. If the requested number\nof bytes could not be allocated an exception is raised.",
+        "type": "Float32ArrayConstructor"
+    },
+    {
+        "name": "Float64Array",
+        "documentation": "A typed array of 64-bit float values. The contents are initialized to 0. If the requested\nnumber of bytes could not be allocated an exception is raised.",
+        "type": "Float64ArrayConstructor"
+    },
+    {
+        "name": "String",
+        "documentation": "Allows manipulation and formatting of text strings and determination and location of substrings within strings.",
+        "type": "StringConstructor"
+    },
+    {
+        "name": "Number",
+        "documentation": "An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. ",
+        "type": "NumberConstructor"
+    },
+    {
+        "name": "Date",
+        "documentation": "Enables basic storage and retrieval of dates and times. ",
+        "type": "DateConstructor"
+    },
+    {
+        "name": "ANGLE_instanced_arrays",
+        "documentation": "",
+        "type": "{ new (): ANGLE_instanced_arrays; prototype: ANGLE_instanced_arrays; readonly VERTEX_ATTRIB_ARRAY..."
+    },
+    {
+        "name": "AnalyserNode",
+        "documentation": "",
+        "type": "{ new (): AnalyserNode; prototype: AnalyserNode; }"
+    },
+    {
+        "name": "AnimationEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: AnimationEventInit): AnimationEvent; prototype: Animation..."
+    },
+    {
+        "name": "ApplicationCache",
+        "documentation": "",
+        "type": "{ new (): ApplicationCache; prototype: ApplicationCache; readonly CHECKING: number; readonly DOWN..."
+    },
+    {
+        "name": "Attr",
+        "documentation": "",
+        "type": "{ new (): Attr; prototype: Attr; }"
+    },
+    {
+        "name": "AudioBuffer",
+        "documentation": "",
+        "type": "{ new (): AudioBuffer; prototype: AudioBuffer; }"
+    },
+    {
+        "name": "AudioBufferSourceNode",
+        "documentation": "",
+        "type": "{ new (): AudioBufferSourceNode; prototype: AudioBufferSourceNode; }"
+    },
+    {
+        "name": "AudioContext",
+        "documentation": "",
+        "type": "{ new (): AudioContext; prototype: AudioContext; }"
+    },
+    {
+        "name": "AudioDestinationNode",
+        "documentation": "",
+        "type": "{ new (): AudioDestinationNode; prototype: AudioDestinationNode; }"
+    },
+    {
+        "name": "AudioListener",
+        "documentation": "",
+        "type": "{ new (): AudioListener; prototype: AudioListener; }"
+    },
+    {
+        "name": "AudioNode",
+        "documentation": "",
+        "type": "{ new (): AudioNode; prototype: AudioNode; }"
+    },
+    {
+        "name": "AudioParam",
+        "documentation": "",
+        "type": "{ new (): AudioParam; prototype: AudioParam; }"
+    },
+    {
+        "name": "AudioProcessingEvent",
+        "documentation": "",
+        "type": "{ new (): AudioProcessingEvent; prototype: AudioProcessingEvent; }"
+    },
+    {
+        "name": "AudioTrack",
+        "documentation": "",
+        "type": "{ new (): AudioTrack; prototype: AudioTrack; }"
+    },
+    {
+        "name": "AudioTrackList",
+        "documentation": "",
+        "type": "{ new (): AudioTrackList; prototype: AudioTrackList; }"
+    },
+    {
+        "name": "BarProp",
+        "documentation": "",
+        "type": "{ new (): BarProp; prototype: BarProp; }"
+    },
+    {
+        "name": "BeforeUnloadEvent",
+        "documentation": "",
+        "type": "{ new (): BeforeUnloadEvent; prototype: BeforeUnloadEvent; }"
+    },
+    {
+        "name": "BiquadFilterNode",
+        "documentation": "",
+        "type": "{ new (): BiquadFilterNode; prototype: BiquadFilterNode; }"
+    },
+    {
+        "name": "Blob",
+        "documentation": "",
+        "type": "{ new (blobParts?: any[], options?: BlobPropertyBag): Blob; prototype: Blob; }"
+    },
+    {
+        "name": "CDATASection",
+        "documentation": "",
+        "type": "{ new (): CDATASection; prototype: CDATASection; }"
+    },
+    {
+        "name": "CSS",
+        "documentation": "",
+        "type": "CSS"
+    },
+    {
+        "name": "CSSConditionRule",
+        "documentation": "",
+        "type": "{ new (): CSSConditionRule; prototype: CSSConditionRule; }"
+    },
+    {
+        "name": "CSSFontFaceRule",
+        "documentation": "",
+        "type": "{ new (): CSSFontFaceRule; prototype: CSSFontFaceRule; }"
+    },
+    {
+        "name": "CSSGroupingRule",
+        "documentation": "",
+        "type": "{ new (): CSSGroupingRule; prototype: CSSGroupingRule; }"
+    },
+    {
+        "name": "CSSImportRule",
+        "documentation": "",
+        "type": "{ new (): CSSImportRule; prototype: CSSImportRule; }"
+    },
+    {
+        "name": "CSSKeyframeRule",
+        "documentation": "",
+        "type": "{ new (): CSSKeyframeRule; prototype: CSSKeyframeRule; }"
+    },
+    {
+        "name": "CSSKeyframesRule",
+        "documentation": "",
+        "type": "{ new (): CSSKeyframesRule; prototype: CSSKeyframesRule; }"
+    },
+    {
+        "name": "CSSMediaRule",
+        "documentation": "",
+        "type": "{ new (): CSSMediaRule; prototype: CSSMediaRule; }"
+    },
+    {
+        "name": "CSSNamespaceRule",
+        "documentation": "",
+        "type": "{ new (): CSSNamespaceRule; prototype: CSSNamespaceRule; }"
+    },
+    {
+        "name": "CSSPageRule",
+        "documentation": "",
+        "type": "{ new (): CSSPageRule; prototype: CSSPageRule; }"
+    },
+    {
+        "name": "CSSRule",
+        "documentation": "",
+        "type": "{ new (): CSSRule; prototype: CSSRule; readonly CHARSET_RULE: number; readonly FONT_FACE_RULE: nu..."
+    },
+    {
+        "name": "CSSRuleList",
+        "documentation": "",
+        "type": "{ new (): CSSRuleList; prototype: CSSRuleList; }"
+    },
+    {
+        "name": "CSSStyleDeclaration",
+        "documentation": "",
+        "type": "{ new (): CSSStyleDeclaration; prototype: CSSStyleDeclaration; }"
+    },
+    {
+        "name": "CSSStyleRule",
+        "documentation": "",
+        "type": "{ new (): CSSStyleRule; prototype: CSSStyleRule; }"
+    },
+    {
+        "name": "CSSStyleSheet",
+        "documentation": "",
+        "type": "{ new (): CSSStyleSheet; prototype: CSSStyleSheet; }"
+    },
+    {
+        "name": "CSSSupportsRule",
+        "documentation": "",
+        "type": "{ new (): CSSSupportsRule; prototype: CSSSupportsRule; }"
+    },
+    {
+        "name": "Cache",
+        "documentation": "",
+        "type": "{ new (): Cache; prototype: Cache; }"
+    },
+    {
+        "name": "CacheStorage",
+        "documentation": "",
+        "type": "{ new (): CacheStorage; prototype: CacheStorage; }"
+    },
+    {
+        "name": "CanvasGradient",
+        "documentation": "",
+        "type": "{ new (): CanvasGradient; prototype: CanvasGradient; }"
+    },
+    {
+        "name": "CanvasPattern",
+        "documentation": "",
+        "type": "{ new (): CanvasPattern; prototype: CanvasPattern; }"
+    },
+    {
+        "name": "CanvasRenderingContext2D",
+        "documentation": "",
+        "type": "{ new (): CanvasRenderingContext2D; prototype: CanvasRenderingContext2D; }"
+    },
+    {
+        "name": "ChannelMergerNode",
+        "documentation": "",
+        "type": "{ new (): ChannelMergerNode; prototype: ChannelMergerNode; }"
+    },
+    {
+        "name": "ChannelSplitterNode",
+        "documentation": "",
+        "type": "{ new (): ChannelSplitterNode; prototype: ChannelSplitterNode; }"
+    },
+    {
+        "name": "CharacterData",
+        "documentation": "",
+        "type": "{ new (): CharacterData; prototype: CharacterData; }"
+    },
+    {
+        "name": "ClientRect",
+        "documentation": "",
+        "type": "{ new (): ClientRect; prototype: ClientRect; }"
+    },
+    {
+        "name": "ClientRectList",
+        "documentation": "",
+        "type": "{ new (): ClientRectList; prototype: ClientRectList; }"
+    },
+    {
+        "name": "ClipboardEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: ClipboardEventInit): ClipboardEvent; prototype: ClipboardEve..."
+    },
+    {
+        "name": "CloseEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: CloseEventInit): CloseEvent; prototype: CloseEvent; }"
+    },
+    {
+        "name": "Comment",
+        "documentation": "",
+        "type": "{ new (): Comment; prototype: Comment; }"
+    },
+    {
+        "name": "CompositionEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: CompositionEventInit): CompositionEvent; prototype: Compo..."
+    },
+    {
+        "name": "Console",
+        "documentation": "",
+        "type": "{ new (): Console; prototype: Console; }"
+    },
+    {
+        "name": "ConvolverNode",
+        "documentation": "",
+        "type": "{ new (): ConvolverNode; prototype: ConvolverNode; }"
+    },
+    {
+        "name": "Coordinates",
+        "documentation": "",
+        "type": "{ new (): Coordinates; prototype: Coordinates; }"
+    },
+    {
+        "name": "Crypto",
+        "documentation": "",
+        "type": "{ new (): Crypto; prototype: Crypto; }"
+    },
+    {
+        "name": "CryptoKey",
+        "documentation": "",
+        "type": "{ new (): CryptoKey; prototype: CryptoKey; }"
+    },
+    {
+        "name": "CryptoKeyPair",
+        "documentation": "",
+        "type": "{ new (): CryptoKeyPair; prototype: CryptoKeyPair; }"
+    },
+    {
+        "name": "CustomEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: CustomEventInit): CustomEvent; prototype: CustomEvent; }"
+    },
+    {
+        "name": "DOMError",
+        "documentation": "",
+        "type": "{ new (): DOMError; prototype: DOMError; }"
+    },
+    {
+        "name": "DOMException",
+        "documentation": "",
+        "type": "{ new (): DOMException; prototype: DOMException; readonly ABORT_ERR: number; readonly DATA_CLONE_..."
+    },
+    {
+        "name": "DOMImplementation",
+        "documentation": "",
+        "type": "{ new (): DOMImplementation; prototype: DOMImplementation; }"
+    },
+    {
+        "name": "DOMParser",
+        "documentation": "",
+        "type": "{ new (): DOMParser; prototype: DOMParser; }"
+    },
+    {
+        "name": "DOMSettableTokenList",
+        "documentation": "",
+        "type": "{ new (): DOMSettableTokenList; prototype: DOMSettableTokenList; }"
+    },
+    {
+        "name": "DOMStringList",
+        "documentation": "",
+        "type": "{ new (): DOMStringList; prototype: DOMStringList; }"
+    },
+    {
+        "name": "DOMStringMap",
+        "documentation": "",
+        "type": "{ new (): DOMStringMap; prototype: DOMStringMap; }"
+    },
+    {
+        "name": "DOMTokenList",
+        "documentation": "",
+        "type": "{ new (): DOMTokenList; prototype: DOMTokenList; }"
+    },
+    {
+        "name": "DataCue",
+        "documentation": "",
+        "type": "{ new (): DataCue; prototype: DataCue; }"
+    },
+    {
+        "name": "DataTransfer",
+        "documentation": "",
+        "type": "{ new (): DataTransfer; prototype: DataTransfer; }"
+    },
+    {
+        "name": "DataTransferItem",
+        "documentation": "",
+        "type": "{ new (): DataTransferItem; prototype: DataTransferItem; }"
+    },
+    {
+        "name": "DataTransferItemList",
+        "documentation": "",
+        "type": "{ new (): DataTransferItemList; prototype: DataTransferItemList; }"
+    },
+    {
+        "name": "DeferredPermissionRequest",
+        "documentation": "",
+        "type": "{ new (): DeferredPermissionRequest; prototype: DeferredPermissionRequest; }"
+    },
+    {
+        "name": "DelayNode",
+        "documentation": "",
+        "type": "{ new (): DelayNode; prototype: DelayNode; }"
+    },
+    {
+        "name": "DeviceAcceleration",
+        "documentation": "",
+        "type": "{ new (): DeviceAcceleration; prototype: DeviceAcceleration; }"
+    },
+    {
+        "name": "DeviceLightEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: DeviceLightEventInit): DeviceLightEvent; prototype: Devic..."
+    },
+    {
+        "name": "DeviceMotionEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: DeviceMotionEventInit): DeviceMotionEvent; prototype: Dev..."
+    },
+    {
+        "name": "DeviceOrientationEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: DeviceOrientationEventInit): DeviceOrientationEvent; prot..."
+    },
+    {
+        "name": "DeviceRotationRate",
+        "documentation": "",
+        "type": "{ new (): DeviceRotationRate; prototype: DeviceRotationRate; }"
+    },
+    {
+        "name": "Document",
+        "documentation": "",
+        "type": "{ new (): Document; prototype: Document; }"
+    },
+    {
+        "name": "DocumentFragment",
+        "documentation": "",
+        "type": "{ new (): DocumentFragment; prototype: DocumentFragment; }"
+    },
+    {
+        "name": "DocumentType",
+        "documentation": "",
+        "type": "{ new (): DocumentType; prototype: DocumentType; }"
+    },
+    {
+        "name": "DragEvent",
+        "documentation": "",
+        "type": "{ new (): DragEvent; prototype: DragEvent; }"
+    },
+    {
+        "name": "DynamicsCompressorNode",
+        "documentation": "",
+        "type": "{ new (): DynamicsCompressorNode; prototype: DynamicsCompressorNode; }"
+    },
+    {
+        "name": "EXT_frag_depth",
+        "documentation": "",
+        "type": "{ new (): EXT_frag_depth; prototype: EXT_frag_depth; }"
+    },
+    {
+        "name": "EXT_texture_filter_anisotropic",
+        "documentation": "",
+        "type": "{ new (): EXT_texture_filter_anisotropic; prototype: EXT_texture_filter_anisotropic; readonly MAX..."
+    },
+    {
+        "name": "Element",
+        "documentation": "",
+        "type": "{ new (): Element; prototype: Element; }"
+    },
+    {
+        "name": "ErrorEvent",
+        "documentation": "",
+        "type": "{ new (type: string, errorEventInitDict?: ErrorEventInit): ErrorEvent; prototype: ErrorEvent; }"
+    },
+    {
+        "name": "Event",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: EventInit): Event; prototype: Event; readonly AT_TARGET: ..."
+    },
+    {
+        "name": "EventTarget",
+        "documentation": "",
+        "type": "{ new (): EventTarget; prototype: EventTarget; }"
+    },
+    {
+        "name": "ExtensionScriptApis",
+        "documentation": "",
+        "type": "{ new (): ExtensionScriptApis; prototype: ExtensionScriptApis; }"
+    },
+    {
+        "name": "External",
+        "documentation": "",
+        "type": "{ new (): External; prototype: External; }"
+    },
+    {
+        "name": "File",
+        "documentation": "",
+        "type": "{ new (parts: (string | Blob | ArrayBuffer | ArrayBufferView)[], filename: string, properties?: F..."
+    },
+    {
+        "name": "FileList",
+        "documentation": "",
+        "type": "{ new (): FileList; prototype: FileList; }"
+    },
+    {
+        "name": "FileReader",
+        "documentation": "",
+        "type": "{ new (): FileReader; prototype: FileReader; }"
+    },
+    {
+        "name": "FocusEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: FocusEventInit): FocusEvent; prototype: FocusEvent; }"
+    },
+    {
+        "name": "FocusNavigationEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: FocusNavigationEventInit): FocusNavigationEvent; prototype: ..."
+    },
+    {
+        "name": "FormData",
+        "documentation": "",
+        "type": "{ new (form?: HTMLFormElement): FormData; prototype: FormData; }"
+    },
+    {
+        "name": "GainNode",
+        "documentation": "",
+        "type": "{ new (): GainNode; prototype: GainNode; }"
+    },
+    {
+        "name": "Gamepad",
+        "documentation": "",
+        "type": "{ new (): Gamepad; prototype: Gamepad; }"
+    },
+    {
+        "name": "GamepadButton",
+        "documentation": "",
+        "type": "{ new (): GamepadButton; prototype: GamepadButton; }"
+    },
+    {
+        "name": "GamepadEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: GamepadEventInit): GamepadEvent; prototype: GamepadEvent; }"
+    },
+    {
+        "name": "Geolocation",
+        "documentation": "",
+        "type": "{ new (): Geolocation; prototype: Geolocation; }"
+    },
+    {
+        "name": "HTMLAllCollection",
+        "documentation": "",
+        "type": "{ new (): HTMLAllCollection; prototype: HTMLAllCollection; }"
+    },
+    {
+        "name": "HTMLAnchorElement",
+        "documentation": "",
+        "type": "{ new (): HTMLAnchorElement; prototype: HTMLAnchorElement; }"
+    },
+    {
+        "name": "HTMLAppletElement",
+        "documentation": "",
+        "type": "{ new (): HTMLAppletElement; prototype: HTMLAppletElement; }"
+    },
+    {
+        "name": "HTMLAreaElement",
+        "documentation": "",
+        "type": "{ new (): HTMLAreaElement; prototype: HTMLAreaElement; }"
+    },
+    {
+        "name": "HTMLAreasCollection",
+        "documentation": "",
+        "type": "{ new (): HTMLAreasCollection; prototype: HTMLAreasCollection; }"
+    },
+    {
+        "name": "HTMLAudioElement",
+        "documentation": "",
+        "type": "{ new (): HTMLAudioElement; prototype: HTMLAudioElement; }"
+    },
+    {
+        "name": "HTMLBRElement",
+        "documentation": "",
+        "type": "{ new (): HTMLBRElement; prototype: HTMLBRElement; }"
+    },
+    {
+        "name": "HTMLBaseElement",
+        "documentation": "",
+        "type": "{ new (): HTMLBaseElement; prototype: HTMLBaseElement; }"
+    },
+    {
+        "name": "HTMLBaseFontElement",
+        "documentation": "",
+        "type": "{ new (): HTMLBaseFontElement; prototype: HTMLBaseFontElement; }"
+    },
+    {
+        "name": "HTMLBodyElement",
+        "documentation": "",
+        "type": "{ new (): HTMLBodyElement; prototype: HTMLBodyElement; }"
+    },
+    {
+        "name": "HTMLButtonElement",
+        "documentation": "",
+        "type": "{ new (): HTMLButtonElement; prototype: HTMLButtonElement; }"
+    },
+    {
+        "name": "HTMLCanvasElement",
+        "documentation": "",
+        "type": "{ new (): HTMLCanvasElement; prototype: HTMLCanvasElement; }"
+    },
+    {
+        "name": "HTMLCollection",
+        "documentation": "",
+        "type": "{ new (): HTMLCollection; prototype: HTMLCollection; }"
+    },
+    {
+        "name": "HTMLDListElement",
+        "documentation": "",
+        "type": "{ new (): HTMLDListElement; prototype: HTMLDListElement; }"
+    },
+    {
+        "name": "HTMLDataElement",
+        "documentation": "",
+        "type": "{ new (): HTMLDataElement; prototype: HTMLDataElement; }"
+    },
+    {
+        "name": "HTMLDataListElement",
+        "documentation": "",
+        "type": "{ new (): HTMLDataListElement; prototype: HTMLDataListElement; }"
+    },
+    {
+        "name": "HTMLDirectoryElement",
+        "documentation": "",
+        "type": "{ new (): HTMLDirectoryElement; prototype: HTMLDirectoryElement; }"
+    },
+    {
+        "name": "HTMLDivElement",
+        "documentation": "",
+        "type": "{ new (): HTMLDivElement; prototype: HTMLDivElement; }"
+    },
+    {
+        "name": "HTMLDocument",
+        "documentation": "",
+        "type": "{ new (): HTMLDocument; prototype: HTMLDocument; }"
+    },
+    {
+        "name": "HTMLElement",
+        "documentation": "",
+        "type": "{ new (): HTMLElement; prototype: HTMLElement; }"
+    },
+    {
+        "name": "HTMLEmbedElement",
+        "documentation": "",
+        "type": "{ new (): HTMLEmbedElement; prototype: HTMLEmbedElement; }"
+    },
+    {
+        "name": "HTMLFieldSetElement",
+        "documentation": "",
+        "type": "{ new (): HTMLFieldSetElement; prototype: HTMLFieldSetElement; }"
+    },
+    {
+        "name": "HTMLFontElement",
+        "documentation": "",
+        "type": "{ new (): HTMLFontElement; prototype: HTMLFontElement; }"
+    },
+    {
+        "name": "HTMLFormControlsCollection",
+        "documentation": "",
+        "type": "{ new (): HTMLFormControlsCollection; prototype: HTMLFormControlsCollection; }"
+    },
+    {
+        "name": "HTMLFormElement",
+        "documentation": "",
+        "type": "{ new (): HTMLFormElement; prototype: HTMLFormElement; }"
+    },
+    {
+        "name": "HTMLFrameElement",
+        "documentation": "",
+        "type": "{ new (): HTMLFrameElement; prototype: HTMLFrameElement; }"
+    },
+    {
+        "name": "HTMLFrameSetElement",
+        "documentation": "",
+        "type": "{ new (): HTMLFrameSetElement; prototype: HTMLFrameSetElement; }"
+    },
+    {
+        "name": "HTMLHRElement",
+        "documentation": "",
+        "type": "{ new (): HTMLHRElement; prototype: HTMLHRElement; }"
+    },
+    {
+        "name": "HTMLHeadElement",
+        "documentation": "",
+        "type": "{ new (): HTMLHeadElement; prototype: HTMLHeadElement; }"
+    },
+    {
+        "name": "HTMLHeadingElement",
+        "documentation": "",
+        "type": "{ new (): HTMLHeadingElement; prototype: HTMLHeadingElement; }"
+    },
+    {
+        "name": "HTMLHtmlElement",
+        "documentation": "",
+        "type": "{ new (): HTMLHtmlElement; prototype: HTMLHtmlElement; }"
+    },
+    {
+        "name": "HTMLIFrameElement",
+        "documentation": "",
+        "type": "{ new (): HTMLIFrameElement; prototype: HTMLIFrameElement; }"
+    },
+    {
+        "name": "HTMLImageElement",
+        "documentation": "",
+        "type": "{ new (): HTMLImageElement; prototype: HTMLImageElement; }"
+    },
+    {
+        "name": "HTMLInputElement",
+        "documentation": "",
+        "type": "{ new (): HTMLInputElement; prototype: HTMLInputElement; }"
+    },
+    {
+        "name": "HTMLLIElement",
+        "documentation": "",
+        "type": "{ new (): HTMLLIElement; prototype: HTMLLIElement; }"
+    },
+    {
+        "name": "HTMLLabelElement",
+        "documentation": "",
+        "type": "{ new (): HTMLLabelElement; prototype: HTMLLabelElement; }"
+    },
+    {
+        "name": "HTMLLegendElement",
+        "documentation": "",
+        "type": "{ new (): HTMLLegendElement; prototype: HTMLLegendElement; }"
+    },
+    {
+        "name": "HTMLLinkElement",
+        "documentation": "",
+        "type": "{ new (): HTMLLinkElement; prototype: HTMLLinkElement; }"
+    },
+    {
+        "name": "HTMLMapElement",
+        "documentation": "",
+        "type": "{ new (): HTMLMapElement; prototype: HTMLMapElement; }"
+    },
+    {
+        "name": "HTMLMarqueeElement",
+        "documentation": "",
+        "type": "{ new (): HTMLMarqueeElement; prototype: HTMLMarqueeElement; }"
+    },
+    {
+        "name": "HTMLMediaElement",
+        "documentation": "",
+        "type": "{ new (): HTMLMediaElement; prototype: HTMLMediaElement; readonly HAVE_CURRENT_DATA: number; read..."
+    },
+    {
+        "name": "HTMLMenuElement",
+        "documentation": "",
+        "type": "{ new (): HTMLMenuElement; prototype: HTMLMenuElement; }"
+    },
+    {
+        "name": "HTMLMetaElement",
+        "documentation": "",
+        "type": "{ new (): HTMLMetaElement; prototype: HTMLMetaElement; }"
+    },
+    {
+        "name": "HTMLMeterElement",
+        "documentation": "",
+        "type": "{ new (): HTMLMeterElement; prototype: HTMLMeterElement; }"
+    },
+    {
+        "name": "HTMLModElement",
+        "documentation": "",
+        "type": "{ new (): HTMLModElement; prototype: HTMLModElement; }"
+    },
+    {
+        "name": "HTMLOListElement",
+        "documentation": "",
+        "type": "{ new (): HTMLOListElement; prototype: HTMLOListElement; }"
+    },
+    {
+        "name": "HTMLObjectElement",
+        "documentation": "",
+        "type": "{ new (): HTMLObjectElement; prototype: HTMLObjectElement; }"
+    },
+    {
+        "name": "HTMLOptGroupElement",
+        "documentation": "",
+        "type": "{ new (): HTMLOptGroupElement; prototype: HTMLOptGroupElement; }"
+    },
+    {
+        "name": "HTMLOptionElement",
+        "documentation": "",
+        "type": "{ new (): HTMLOptionElement; prototype: HTMLOptionElement; }"
+    },
+    {
+        "name": "HTMLOptionsCollection",
+        "documentation": "",
+        "type": "{ new (): HTMLOptionsCollection; prototype: HTMLOptionsCollection; }"
+    },
+    {
+        "name": "HTMLOutputElement",
+        "documentation": "",
+        "type": "{ new (): HTMLOutputElement; prototype: HTMLOutputElement; }"
+    },
+    {
+        "name": "HTMLParagraphElement",
+        "documentation": "",
+        "type": "{ new (): HTMLParagraphElement; prototype: HTMLParagraphElement; }"
+    },
+    {
+        "name": "HTMLParamElement",
+        "documentation": "",
+        "type": "{ new (): HTMLParamElement; prototype: HTMLParamElement; }"
+    },
+    {
+        "name": "HTMLPictureElement",
+        "documentation": "",
+        "type": "{ new (): HTMLPictureElement; prototype: HTMLPictureElement; }"
+    },
+    {
+        "name": "HTMLPreElement",
+        "documentation": "",
+        "type": "{ new (): HTMLPreElement; prototype: HTMLPreElement; }"
+    },
+    {
+        "name": "HTMLProgressElement",
+        "documentation": "",
+        "type": "{ new (): HTMLProgressElement; prototype: HTMLProgressElement; }"
+    },
+    {
+        "name": "HTMLQuoteElement",
+        "documentation": "",
+        "type": "{ new (): HTMLQuoteElement; prototype: HTMLQuoteElement; }"
+    },
+    {
+        "name": "HTMLScriptElement",
+        "documentation": "",
+        "type": "{ new (): HTMLScriptElement; prototype: HTMLScriptElement; }"
+    },
+    {
+        "name": "HTMLSelectElement",
+        "documentation": "",
+        "type": "{ new (): HTMLSelectElement; prototype: HTMLSelectElement; }"
+    },
+    {
+        "name": "HTMLSourceElement",
+        "documentation": "",
+        "type": "{ new (): HTMLSourceElement; prototype: HTMLSourceElement; }"
+    },
+    {
+        "name": "HTMLSpanElement",
+        "documentation": "",
+        "type": "{ new (): HTMLSpanElement; prototype: HTMLSpanElement; }"
+    },
+    {
+        "name": "HTMLStyleElement",
+        "documentation": "",
+        "type": "{ new (): HTMLStyleElement; prototype: HTMLStyleElement; }"
+    },
+    {
+        "name": "HTMLTableCaptionElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableCaptionElement; prototype: HTMLTableCaptionElement; }"
+    },
+    {
+        "name": "HTMLTableCellElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableCellElement; prototype: HTMLTableCellElement; }"
+    },
+    {
+        "name": "HTMLTableColElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableColElement; prototype: HTMLTableColElement; }"
+    },
+    {
+        "name": "HTMLTableDataCellElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableDataCellElement; prototype: HTMLTableDataCellElement; }"
+    },
+    {
+        "name": "HTMLTableElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableElement; prototype: HTMLTableElement; }"
+    },
+    {
+        "name": "HTMLTableHeaderCellElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableHeaderCellElement; prototype: HTMLTableHeaderCellElement; }"
+    },
+    {
+        "name": "HTMLTableRowElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableRowElement; prototype: HTMLTableRowElement; }"
+    },
+    {
+        "name": "HTMLTableSectionElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTableSectionElement; prototype: HTMLTableSectionElement; }"
+    },
+    {
+        "name": "HTMLTemplateElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTemplateElement; prototype: HTMLTemplateElement; }"
+    },
+    {
+        "name": "HTMLTextAreaElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTextAreaElement; prototype: HTMLTextAreaElement; }"
+    },
+    {
+        "name": "HTMLTimeElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTimeElement; prototype: HTMLTimeElement; }"
+    },
+    {
+        "name": "HTMLTitleElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTitleElement; prototype: HTMLTitleElement; }"
+    },
+    {
+        "name": "HTMLTrackElement",
+        "documentation": "",
+        "type": "{ new (): HTMLTrackElement; prototype: HTMLTrackElement; readonly ERROR: number; readonly LOADED:..."
+    },
+    {
+        "name": "HTMLUListElement",
+        "documentation": "",
+        "type": "{ new (): HTMLUListElement; prototype: HTMLUListElement; }"
+    },
+    {
+        "name": "HTMLUnknownElement",
+        "documentation": "",
+        "type": "{ new (): HTMLUnknownElement; prototype: HTMLUnknownElement; }"
+    },
+    {
+        "name": "HTMLVideoElement",
+        "documentation": "",
+        "type": "{ new (): HTMLVideoElement; prototype: HTMLVideoElement; }"
+    },
+    {
+        "name": "HashChangeEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: HashChangeEventInit): HashChangeEvent; prototype: HashCha..."
+    },
+    {
+        "name": "Headers",
+        "documentation": "",
+        "type": "{ new (init?: any): Headers; prototype: Headers; }"
+    },
+    {
+        "name": "History",
+        "documentation": "",
+        "type": "{ new (): History; prototype: History; }"
+    },
+    {
+        "name": "IDBCursor",
+        "documentation": "",
+        "type": "{ new (): IDBCursor; prototype: IDBCursor; readonly NEXT: string; readonly NEXT_NO_DUPLICATE: str..."
+    },
+    {
+        "name": "IDBCursorWithValue",
+        "documentation": "",
+        "type": "{ new (): IDBCursorWithValue; prototype: IDBCursorWithValue; }"
+    },
+    {
+        "name": "IDBDatabase",
+        "documentation": "",
+        "type": "{ new (): IDBDatabase; prototype: IDBDatabase; }"
+    },
+    {
+        "name": "IDBFactory",
+        "documentation": "",
+        "type": "{ new (): IDBFactory; prototype: IDBFactory; }"
+    },
+    {
+        "name": "IDBIndex",
+        "documentation": "",
+        "type": "{ new (): IDBIndex; prototype: IDBIndex; }"
+    },
+    {
+        "name": "IDBKeyRange",
+        "documentation": "",
+        "type": "{ new (): IDBKeyRange; prototype: IDBKeyRange; bound(lower: any, upper: any, lowerOpen?: boolean,..."
+    },
+    {
+        "name": "IDBObjectStore",
+        "documentation": "",
+        "type": "{ new (): IDBObjectStore; prototype: IDBObjectStore; }"
+    },
+    {
+        "name": "IDBOpenDBRequest",
+        "documentation": "",
+        "type": "{ new (): IDBOpenDBRequest; prototype: IDBOpenDBRequest; }"
+    },
+    {
+        "name": "IDBRequest",
+        "documentation": "",
+        "type": "{ new (): IDBRequest; prototype: IDBRequest; }"
+    },
+    {
+        "name": "IDBTransaction",
+        "documentation": "",
+        "type": "{ new (): IDBTransaction; prototype: IDBTransaction; readonly READ_ONLY: string; readonly READ_WR..."
+    },
+    {
+        "name": "IDBVersionChangeEvent",
+        "documentation": "",
+        "type": "{ new (): IDBVersionChangeEvent; prototype: IDBVersionChangeEvent; }"
+    },
+    {
+        "name": "IIRFilterNode",
+        "documentation": "",
+        "type": "{ new (): IIRFilterNode; prototype: IIRFilterNode; }"
+    },
+    {
+        "name": "ImageData",
+        "documentation": "",
+        "type": "{ new (width: number, height: number): ImageData; new (array: Uint8ClampedArray, width: number, h..."
+    },
+    {
+        "name": "IntersectionObserver",
+        "documentation": "",
+        "type": "{ new (callback: IntersectionObserverCallback, options?: IntersectionObserverInit): IntersectionO..."
+    },
+    {
+        "name": "IntersectionObserverEntry",
+        "documentation": "",
+        "type": "{ new (intersectionObserverEntryInit: IntersectionObserverEntryInit): IntersectionObserverEntry; ..."
+    },
+    {
+        "name": "KeyboardEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: KeyboardEventInit): KeyboardEvent; prototype: KeyboardEve..."
+    },
+    {
+        "name": "ListeningStateChangedEvent",
+        "documentation": "",
+        "type": "{ new (): ListeningStateChangedEvent; prototype: ListeningStateChangedEvent; }"
+    },
+    {
+        "name": "Location",
+        "documentation": "",
+        "type": "{ new (): Location; prototype: Location; }"
+    },
+    {
+        "name": "LongRunningScriptDetectedEvent",
+        "documentation": "",
+        "type": "{ new (): LongRunningScriptDetectedEvent; prototype: LongRunningScriptDetectedEvent; }"
+    },
+    {
+        "name": "MSApp",
+        "documentation": "",
+        "type": "MSApp"
+    },
+    {
+        "name": "MSAppAsyncOperation",
+        "documentation": "",
+        "type": "{ new (): MSAppAsyncOperation; prototype: MSAppAsyncOperation; readonly COMPLETED: number; readon..."
+    },
+    {
+        "name": "MSAssertion",
+        "documentation": "",
+        "type": "{ new (): MSAssertion; prototype: MSAssertion; }"
+    },
+    {
+        "name": "MSBlobBuilder",
+        "documentation": "",
+        "type": "{ new (): MSBlobBuilder; prototype: MSBlobBuilder; }"
+    },
+    {
+        "name": "MSCredentials",
+        "documentation": "",
+        "type": "{ new (): MSCredentials; prototype: MSCredentials; }"
+    },
+    {
+        "name": "MSFIDOCredentialAssertion",
+        "documentation": "",
+        "type": "{ new (): MSFIDOCredentialAssertion; prototype: MSFIDOCredentialAssertion; }"
+    },
+    {
+        "name": "MSFIDOSignature",
+        "documentation": "",
+        "type": "{ new (): MSFIDOSignature; prototype: MSFIDOSignature; }"
+    },
+    {
+        "name": "MSFIDOSignatureAssertion",
+        "documentation": "",
+        "type": "{ new (): MSFIDOSignatureAssertion; prototype: MSFIDOSignatureAssertion; }"
+    },
+    {
+        "name": "MSGesture",
+        "documentation": "",
+        "type": "{ new (): MSGesture; prototype: MSGesture; }"
+    },
+    {
+        "name": "MSGestureEvent",
+        "documentation": "",
+        "type": "{ new (): MSGestureEvent; prototype: MSGestureEvent; readonly MSGESTURE_FLAG_BEGIN: number; reado..."
+    },
+    {
+        "name": "MSGraphicsTrust",
+        "documentation": "",
+        "type": "{ new (): MSGraphicsTrust; prototype: MSGraphicsTrust; }"
+    },
+    {
+        "name": "MSHTMLWebViewElement",
+        "documentation": "",
+        "type": "{ new (): MSHTMLWebViewElement; prototype: MSHTMLWebViewElement; }"
+    },
+    {
+        "name": "MSInputMethodContext",
+        "documentation": "",
+        "type": "{ new (): MSInputMethodContext; prototype: MSInputMethodContext; }"
+    },
+    {
+        "name": "MSManipulationEvent",
+        "documentation": "",
+        "type": "{ new (): MSManipulationEvent; prototype: MSManipulationEvent; readonly MS_MANIPULATION_STATE_ACT..."
+    },
+    {
+        "name": "MSMediaKeyError",
+        "documentation": "",
+        "type": "{ new (): MSMediaKeyError; prototype: MSMediaKeyError; readonly MS_MEDIA_KEYERR_CLIENT: number; r..."
+    },
+    {
+        "name": "MSMediaKeyMessageEvent",
+        "documentation": "",
+        "type": "{ new (): MSMediaKeyMessageEvent; prototype: MSMediaKeyMessageEvent; }"
+    },
+    {
+        "name": "MSMediaKeyNeededEvent",
+        "documentation": "",
+        "type": "{ new (): MSMediaKeyNeededEvent; prototype: MSMediaKeyNeededEvent; }"
+    },
+    {
+        "name": "MSMediaKeySession",
+        "documentation": "",
+        "type": "{ new (): MSMediaKeySession; prototype: MSMediaKeySession; }"
+    },
+    {
+        "name": "MSMediaKeys",
+        "documentation": "",
+        "type": "{ new (keySystem: string): MSMediaKeys; prototype: MSMediaKeys; isTypeSupported(keySystem: string..."
+    },
+    {
+        "name": "MSPointerEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: PointerEventInit): MSPointerEvent; prototype: MSPointerEv..."
+    },
+    {
+        "name": "MSRangeCollection",
+        "documentation": "",
+        "type": "{ new (): MSRangeCollection; prototype: MSRangeCollection; }"
+    },
+    {
+        "name": "MSSiteModeEvent",
+        "documentation": "",
+        "type": "{ new (): MSSiteModeEvent; prototype: MSSiteModeEvent; }"
+    },
+    {
+        "name": "MSStream",
+        "documentation": "",
+        "type": "{ new (): MSStream; prototype: MSStream; }"
+    },
+    {
+        "name": "MSStreamReader",
+        "documentation": "",
+        "type": "{ new (): MSStreamReader; prototype: MSStreamReader; }"
+    },
+    {
+        "name": "MSWebViewAsyncOperation",
+        "documentation": "",
+        "type": "{ new (): MSWebViewAsyncOperation; prototype: MSWebViewAsyncOperation; readonly COMPLETED: number..."
+    },
+    {
+        "name": "MSWebViewSettings",
+        "documentation": "",
+        "type": "{ new (): MSWebViewSettings; prototype: MSWebViewSettings; }"
+    },
+    {
+        "name": "MediaDeviceInfo",
+        "documentation": "",
+        "type": "{ new (): MediaDeviceInfo; prototype: MediaDeviceInfo; }"
+    },
+    {
+        "name": "MediaDevices",
+        "documentation": "",
+        "type": "{ new (): MediaDevices; prototype: MediaDevices; }"
+    },
+    {
+        "name": "MediaElementAudioSourceNode",
+        "documentation": "",
+        "type": "{ new (): MediaElementAudioSourceNode; prototype: MediaElementAudioSourceNode; }"
+    },
+    {
+        "name": "MediaEncryptedEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: MediaEncryptedEventInit): MediaEncryptedEvent; prototype: Me..."
+    },
+    {
+        "name": "MediaError",
+        "documentation": "",
+        "type": "{ new (): MediaError; prototype: MediaError; readonly MEDIA_ERR_ABORTED: number; readonly MEDIA_E..."
+    },
+    {
+        "name": "MediaKeyMessageEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: MediaKeyMessageEventInit): MediaKeyMessageEvent; prototype: ..."
+    },
+    {
+        "name": "MediaKeySession",
+        "documentation": "",
+        "type": "{ new (): MediaKeySession; prototype: MediaKeySession; }"
+    },
+    {
+        "name": "MediaKeyStatusMap",
+        "documentation": "",
+        "type": "{ new (): MediaKeyStatusMap; prototype: MediaKeyStatusMap; }"
+    },
+    {
+        "name": "MediaKeySystemAccess",
+        "documentation": "",
+        "type": "{ new (): MediaKeySystemAccess; prototype: MediaKeySystemAccess; }"
+    },
+    {
+        "name": "MediaKeys",
+        "documentation": "",
+        "type": "{ new (): MediaKeys; prototype: MediaKeys; }"
+    },
+    {
+        "name": "MediaList",
+        "documentation": "",
+        "type": "{ new (): MediaList; prototype: MediaList; }"
+    },
+    {
+        "name": "MediaQueryList",
+        "documentation": "",
+        "type": "{ new (): MediaQueryList; prototype: MediaQueryList; }"
+    },
+    {
+        "name": "MediaSource",
+        "documentation": "",
+        "type": "{ new (): MediaSource; prototype: MediaSource; isTypeSupported(type: string): boolean; }"
+    },
+    {
+        "name": "MediaStream",
+        "documentation": "",
+        "type": "{ new (streamOrTracks?: MediaStream | MediaStreamTrack[]): MediaStream; prototype: MediaStream; }"
+    },
+    {
+        "name": "MediaStreamAudioSourceNode",
+        "documentation": "",
+        "type": "{ new (): MediaStreamAudioSourceNode; prototype: MediaStreamAudioSourceNode; }"
+    },
+    {
+        "name": "MediaStreamError",
+        "documentation": "",
+        "type": "{ new (): MediaStreamError; prototype: MediaStreamError; }"
+    },
+    {
+        "name": "MediaStreamErrorEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: MediaStreamErrorEventInit): MediaStreamErrorEvent; protot..."
+    },
+    {
+        "name": "MediaStreamEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict: MediaStreamEventInit): MediaStreamEvent; prototype: MediaStre..."
+    },
+    {
+        "name": "MediaStreamTrack",
+        "documentation": "",
+        "type": "{ new (): MediaStreamTrack; prototype: MediaStreamTrack; }"
+    },
+    {
+        "name": "MediaStreamTrackEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: MediaStreamTrackEventInit): MediaStreamTrackEvent; protot..."
+    },
+    {
+        "name": "MessageChannel",
+        "documentation": "",
+        "type": "{ new (): MessageChannel; prototype: MessageChannel; }"
+    },
+    {
+        "name": "MessageEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: MessageEventInit): MessageEvent; prototype: MessageEvent; }"
+    },
+    {
+        "name": "MessagePort",
+        "documentation": "",
+        "type": "{ new (): MessagePort; prototype: MessagePort; }"
+    },
+    {
+        "name": "MimeType",
+        "documentation": "",
+        "type": "{ new (): MimeType; prototype: MimeType; }"
+    },
+    {
+        "name": "MimeTypeArray",
+        "documentation": "",
+        "type": "{ new (): MimeTypeArray; prototype: MimeTypeArray; }"
+    },
+    {
+        "name": "MouseEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: MouseEventInit): MouseEvent; prototype: MouseEvent; }"
+    },
+    {
+        "name": "MutationEvent",
+        "documentation": "",
+        "type": "{ new (): MutationEvent; prototype: MutationEvent; readonly ADDITION: number; readonly MODIFICATI..."
+    },
+    {
+        "name": "MutationObserver",
+        "documentation": "",
+        "type": "{ new (callback: MutationCallback): MutationObserver; prototype: MutationObserver; }"
+    },
+    {
+        "name": "MutationRecord",
+        "documentation": "",
+        "type": "{ new (): MutationRecord; prototype: MutationRecord; }"
+    },
+    {
+        "name": "NamedNodeMap",
+        "documentation": "",
+        "type": "{ new (): NamedNodeMap; prototype: NamedNodeMap; }"
+    },
+    {
+        "name": "NavigationCompletedEvent",
+        "documentation": "",
+        "type": "{ new (): NavigationCompletedEvent; prototype: NavigationCompletedEvent; }"
+    },
+    {
+        "name": "NavigationEvent",
+        "documentation": "",
+        "type": "{ new (): NavigationEvent; prototype: NavigationEvent; }"
+    },
+    {
+        "name": "NavigationEventWithReferrer",
+        "documentation": "",
+        "type": "{ new (): NavigationEventWithReferrer; prototype: NavigationEventWithReferrer; }"
+    },
+    {
+        "name": "Navigator",
+        "documentation": "",
+        "type": "{ new (): Navigator; prototype: Navigator; }"
+    },
+    {
+        "name": "Node",
+        "documentation": "",
+        "type": "{ new (): Node; prototype: Node; readonly ATTRIBUTE_NODE: number; readonly CDATA_SECTION_NODE: nu..."
+    },
+    {
+        "name": "NodeFilter",
+        "documentation": "",
+        "type": "{ readonly FILTER_ACCEPT: number; readonly FILTER_REJECT: number; readonly FILTER_SKIP: number; r..."
+    },
+    {
+        "name": "NodeIterator",
+        "documentation": "",
+        "type": "{ new (): NodeIterator; prototype: NodeIterator; }"
+    },
+    {
+        "name": "NodeList",
+        "documentation": "",
+        "type": "{ new (): NodeList; prototype: NodeList; }"
+    },
+    {
+        "name": "Notification",
+        "documentation": "",
+        "type": "{ new (title: string, options?: NotificationOptions): Notification; prototype: Notification; requ..."
+    },
+    {
+        "name": "OES_element_index_uint",
+        "documentation": "",
+        "type": "{ new (): OES_element_index_uint; prototype: OES_element_index_uint; }"
+    },
+    {
+        "name": "OES_standard_derivatives",
+        "documentation": "",
+        "type": "{ new (): OES_standard_derivatives; prototype: OES_standard_derivatives; readonly FRAGMENT_SHADER..."
+    },
+    {
+        "name": "OES_texture_float",
+        "documentation": "",
+        "type": "{ new (): OES_texture_float; prototype: OES_texture_float; }"
+    },
+    {
+        "name": "OES_texture_float_linear",
+        "documentation": "",
+        "type": "{ new (): OES_texture_float_linear; prototype: OES_texture_float_linear; }"
+    },
+    {
+        "name": "OES_texture_half_float",
+        "documentation": "",
+        "type": "{ new (): OES_texture_half_float; prototype: OES_texture_half_float; readonly HALF_FLOAT_OES: num..."
+    },
+    {
+        "name": "OES_texture_half_float_linear",
+        "documentation": "",
+        "type": "{ new (): OES_texture_half_float_linear; prototype: OES_texture_half_float_linear; }"
+    },
+    {
+        "name": "OfflineAudioCompletionEvent",
+        "documentation": "",
+        "type": "{ new (): OfflineAudioCompletionEvent; prototype: OfflineAudioCompletionEvent; }"
+    },
+    {
+        "name": "OfflineAudioContext",
+        "documentation": "",
+        "type": "{ new (numberOfChannels: number, length: number, sampleRate: number): OfflineAudioContext; protot..."
+    },
+    {
+        "name": "OscillatorNode",
+        "documentation": "",
+        "type": "{ new (): OscillatorNode; prototype: OscillatorNode; }"
+    },
+    {
+        "name": "OverflowEvent",
+        "documentation": "",
+        "type": "{ new (): OverflowEvent; prototype: OverflowEvent; readonly BOTH: number; readonly HORIZONTAL: nu..."
+    },
+    {
+        "name": "PageTransitionEvent",
+        "documentation": "",
+        "type": "{ new (): PageTransitionEvent; prototype: PageTransitionEvent; }"
+    },
+    {
+        "name": "PannerNode",
+        "documentation": "",
+        "type": "{ new (): PannerNode; prototype: PannerNode; }"
+    },
+    {
+        "name": "Path2D",
+        "documentation": "",
+        "type": "{ new (path?: Path2D): Path2D; prototype: Path2D; }"
+    },
+    {
+        "name": "PaymentAddress",
+        "documentation": "",
+        "type": "{ new (): PaymentAddress; prototype: PaymentAddress; }"
+    },
+    {
+        "name": "PaymentRequest",
+        "documentation": "",
+        "type": "{ new (methodData: PaymentMethodData[], details: PaymentDetails, options?: PaymentOptions): Payme..."
+    },
+    {
+        "name": "PaymentRequestUpdateEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: PaymentRequestUpdateEventInit): PaymentRequestUpdateEvent; p..."
+    },
+    {
+        "name": "PaymentResponse",
+        "documentation": "",
+        "type": "{ new (): PaymentResponse; prototype: PaymentResponse; }"
+    },
+    {
+        "name": "PerfWidgetExternal",
+        "documentation": "",
+        "type": "{ new (): PerfWidgetExternal; prototype: PerfWidgetExternal; }"
+    },
+    {
+        "name": "Performance",
+        "documentation": "",
+        "type": "{ new (): Performance; prototype: Performance; }"
+    },
+    {
+        "name": "PerformanceEntry",
+        "documentation": "",
+        "type": "{ new (): PerformanceEntry; prototype: PerformanceEntry; }"
+    },
+    {
+        "name": "PerformanceMark",
+        "documentation": "",
+        "type": "{ new (): PerformanceMark; prototype: PerformanceMark; }"
+    },
+    {
+        "name": "PerformanceMeasure",
+        "documentation": "",
+        "type": "{ new (): PerformanceMeasure; prototype: PerformanceMeasure; }"
+    },
+    {
+        "name": "PerformanceNavigation",
+        "documentation": "",
+        "type": "{ new (): PerformanceNavigation; prototype: PerformanceNavigation; readonly TYPE_BACK_FORWARD: nu..."
+    },
+    {
+        "name": "PerformanceNavigationTiming",
+        "documentation": "",
+        "type": "{ new (): PerformanceNavigationTiming; prototype: PerformanceNavigationTiming; }"
+    },
+    {
+        "name": "PerformanceResourceTiming",
+        "documentation": "",
+        "type": "{ new (): PerformanceResourceTiming; prototype: PerformanceResourceTiming; }"
+    },
+    {
+        "name": "PerformanceTiming",
+        "documentation": "",
+        "type": "{ new (): PerformanceTiming; prototype: PerformanceTiming; }"
+    },
+    {
+        "name": "PeriodicWave",
+        "documentation": "",
+        "type": "{ new (): PeriodicWave; prototype: PeriodicWave; }"
+    },
+    {
+        "name": "PermissionRequest",
+        "documentation": "",
+        "type": "{ new (): PermissionRequest; prototype: PermissionRequest; }"
+    },
+    {
+        "name": "PermissionRequestedEvent",
+        "documentation": "",
+        "type": "{ new (): PermissionRequestedEvent; prototype: PermissionRequestedEvent; }"
+    },
+    {
+        "name": "Plugin",
+        "documentation": "",
+        "type": "{ new (): Plugin; prototype: Plugin; }"
+    },
+    {
+        "name": "PluginArray",
+        "documentation": "",
+        "type": "{ new (): PluginArray; prototype: PluginArray; }"
+    },
+    {
+        "name": "PointerEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: PointerEventInit): PointerEvent; prototype: PointerEvent; }"
+    },
+    {
+        "name": "PopStateEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: PopStateEventInit): PopStateEvent; prototype: PopStateEve..."
+    },
+    {
+        "name": "Position",
+        "documentation": "",
+        "type": "{ new (): Position; prototype: Position; }"
+    },
+    {
+        "name": "PositionError",
+        "documentation": "",
+        "type": "{ new (): PositionError; prototype: PositionError; readonly PERMISSION_DENIED: number; readonly P..."
+    },
+    {
+        "name": "ProcessingInstruction",
+        "documentation": "",
+        "type": "{ new (): ProcessingInstruction; prototype: ProcessingInstruction; }"
+    },
+    {
+        "name": "ProgressEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: ProgressEventInit): ProgressEvent; prototype: ProgressEvent; }"
+    },
+    {
+        "name": "PushManager",
+        "documentation": "",
+        "type": "{ new (): PushManager; prototype: PushManager; }"
+    },
+    {
+        "name": "PushSubscription",
+        "documentation": "",
+        "type": "{ new (): PushSubscription; prototype: PushSubscription; }"
+    },
+    {
+        "name": "PushSubscriptionOptions",
+        "documentation": "",
+        "type": "{ new (): PushSubscriptionOptions; prototype: PushSubscriptionOptions; }"
+    },
+    {
+        "name": "RTCDTMFToneChangeEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict: RTCDTMFToneChangeEventInit): RTCDTMFToneChangeEvent; proto..."
+    },
+    {
+        "name": "RTCDtlsTransport",
+        "documentation": "",
+        "type": "{ new (transport: RTCIceTransport): RTCDtlsTransport; prototype: RTCDtlsTransport; }"
+    },
+    {
+        "name": "RTCDtlsTransportStateChangedEvent",
+        "documentation": "",
+        "type": "{ new (): RTCDtlsTransportStateChangedEvent; prototype: RTCDtlsTransportStateChangedEvent; }"
+    },
+    {
+        "name": "RTCDtmfSender",
+        "documentation": "",
+        "type": "{ new (sender: RTCRtpSender): RTCDtmfSender; prototype: RTCDtmfSender; }"
+    },
+    {
+        "name": "RTCIceCandidate",
+        "documentation": "",
+        "type": "{ new (candidateInitDict?: RTCIceCandidateInit): RTCIceCandidate; prototype: RTCIceCandidate; }"
+    },
+    {
+        "name": "RTCIceCandidatePairChangedEvent",
+        "documentation": "",
+        "type": "{ new (): RTCIceCandidatePairChangedEvent; prototype: RTCIceCandidatePairChangedEvent; }"
+    },
+    {
+        "name": "RTCIceGatherer",
+        "documentation": "",
+        "type": "{ new (options: RTCIceGatherOptions): RTCIceGatherer; prototype: RTCIceGatherer; }"
+    },
+    {
+        "name": "RTCIceGathererEvent",
+        "documentation": "",
+        "type": "{ new (): RTCIceGathererEvent; prototype: RTCIceGathererEvent; }"
+    },
+    {
+        "name": "RTCIceTransport",
+        "documentation": "",
+        "type": "{ new (): RTCIceTransport; prototype: RTCIceTransport; }"
+    },
+    {
+        "name": "RTCIceTransportStateChangedEvent",
+        "documentation": "",
+        "type": "{ new (): RTCIceTransportStateChangedEvent; prototype: RTCIceTransportStateChangedEvent; }"
+    },
+    {
+        "name": "RTCPeerConnection",
+        "documentation": "",
+        "type": "{ new (configuration: RTCConfiguration): RTCPeerConnection; prototype: RTCPeerConnection; }"
+    },
+    {
+        "name": "RTCPeerConnectionIceEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict: RTCPeerConnectionIceEventInit): RTCPeerConnectionIceEvent; pr..."
+    },
+    {
+        "name": "RTCRtpReceiver",
+        "documentation": "",
+        "type": "{ new (transport: RTCDtlsTransport | RTCSrtpSdesTransport, kind: string, rtcpTransport?: RTCDtlsT..."
+    },
+    {
+        "name": "RTCRtpSender",
+        "documentation": "",
+        "type": "{ new (track: MediaStreamTrack, transport: RTCDtlsTransport | RTCSrtpSdesTransport, rtcpTransport..."
+    },
+    {
+        "name": "RTCSessionDescription",
+        "documentation": "",
+        "type": "{ new (descriptionInitDict?: RTCSessionDescriptionInit): RTCSessionDescription; prototype: RTCSes..."
+    },
+    {
+        "name": "RTCSrtpSdesTransport",
+        "documentation": "",
+        "type": "{ new (transport: RTCIceTransport, encryptParameters: RTCSrtpSdesParameters, decryptParameters: R..."
+    },
+    {
+        "name": "RTCSsrcConflictEvent",
+        "documentation": "",
+        "type": "{ new (): RTCSsrcConflictEvent; prototype: RTCSsrcConflictEvent; }"
+    },
+    {
+        "name": "RTCStatsProvider",
+        "documentation": "",
+        "type": "{ new (): RTCStatsProvider; prototype: RTCStatsProvider; }"
+    },
+    {
+        "name": "Range",
+        "documentation": "",
+        "type": "{ new (): Range; prototype: Range; readonly END_TO_END: number; readonly END_TO_START: number; re..."
+    },
+    {
+        "name": "ReadableStream",
+        "documentation": "",
+        "type": "{ new (): ReadableStream; prototype: ReadableStream; }"
+    },
+    {
+        "name": "ReadableStreamReader",
+        "documentation": "",
+        "type": "{ new (): ReadableStreamReader; prototype: ReadableStreamReader; }"
+    },
+    {
+        "name": "Request",
+        "documentation": "",
+        "type": "{ new (input: string | Request, init?: RequestInit): Request; prototype: Request; }"
+    },
+    {
+        "name": "Response",
+        "documentation": "",
+        "type": "{ new (body?: any, init?: ResponseInit): Response; prototype: Response; }"
+    },
+    {
+        "name": "SVGAElement",
+        "documentation": "",
+        "type": "{ new (): SVGAElement; prototype: SVGAElement; }"
+    },
+    {
+        "name": "SVGAngle",
+        "documentation": "",
+        "type": "{ new (): SVGAngle; prototype: SVGAngle; readonly SVG_ANGLETYPE_DEG: number; readonly SVG_ANGLETY..."
+    },
+    {
+        "name": "SVGAnimatedAngle",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedAngle; prototype: SVGAnimatedAngle; }"
+    },
+    {
+        "name": "SVGAnimatedBoolean",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedBoolean; prototype: SVGAnimatedBoolean; }"
+    },
+    {
+        "name": "SVGAnimatedEnumeration",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedEnumeration; prototype: SVGAnimatedEnumeration; }"
+    },
+    {
+        "name": "SVGAnimatedInteger",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedInteger; prototype: SVGAnimatedInteger; }"
+    },
+    {
+        "name": "SVGAnimatedLength",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedLength; prototype: SVGAnimatedLength; }"
+    },
+    {
+        "name": "SVGAnimatedLengthList",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedLengthList; prototype: SVGAnimatedLengthList; }"
+    },
+    {
+        "name": "SVGAnimatedNumber",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedNumber; prototype: SVGAnimatedNumber; }"
+    },
+    {
+        "name": "SVGAnimatedNumberList",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedNumberList; prototype: SVGAnimatedNumberList; }"
+    },
+    {
+        "name": "SVGAnimatedPreserveAspectRatio",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedPreserveAspectRatio; prototype: SVGAnimatedPreserveAspectRatio; }"
+    },
+    {
+        "name": "SVGAnimatedRect",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedRect; prototype: SVGAnimatedRect; }"
+    },
+    {
+        "name": "SVGAnimatedString",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedString; prototype: SVGAnimatedString; }"
+    },
+    {
+        "name": "SVGAnimatedTransformList",
+        "documentation": "",
+        "type": "{ new (): SVGAnimatedTransformList; prototype: SVGAnimatedTransformList; }"
+    },
+    {
+        "name": "SVGCircleElement",
+        "documentation": "",
+        "type": "{ new (): SVGCircleElement; prototype: SVGCircleElement; }"
+    },
+    {
+        "name": "SVGClipPathElement",
+        "documentation": "",
+        "type": "{ new (): SVGClipPathElement; prototype: SVGClipPathElement; }"
+    },
+    {
+        "name": "SVGComponentTransferFunctionElement",
+        "documentation": "",
+        "type": "{ new (): SVGComponentTransferFunctionElement; prototype: SVGComponentTransferFunctionElement; re..."
+    },
+    {
+        "name": "SVGDefsElement",
+        "documentation": "",
+        "type": "{ new (): SVGDefsElement; prototype: SVGDefsElement; }"
+    },
+    {
+        "name": "SVGDescElement",
+        "documentation": "",
+        "type": "{ new (): SVGDescElement; prototype: SVGDescElement; }"
+    },
+    {
+        "name": "SVGElement",
+        "documentation": "",
+        "type": "{ new (): SVGElement; prototype: SVGElement; }"
+    },
+    {
+        "name": "SVGElementInstance",
+        "documentation": "",
+        "type": "{ new (): SVGElementInstance; prototype: SVGElementInstance; }"
+    },
+    {
+        "name": "SVGElementInstanceList",
+        "documentation": "",
+        "type": "{ new (): SVGElementInstanceList; prototype: SVGElementInstanceList; }"
+    },
+    {
+        "name": "SVGEllipseElement",
+        "documentation": "",
+        "type": "{ new (): SVGEllipseElement; prototype: SVGEllipseElement; }"
+    },
+    {
+        "name": "SVGFEBlendElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEBlendElement; prototype: SVGFEBlendElement; readonly SVG_FEBLEND_MODE_COLOR: numbe..."
+    },
+    {
+        "name": "SVGFEColorMatrixElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEColorMatrixElement; prototype: SVGFEColorMatrixElement; readonly SVG_FECOLORMATRIX..."
+    },
+    {
+        "name": "SVGFEComponentTransferElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEComponentTransferElement; prototype: SVGFEComponentTransferElement; }"
+    },
+    {
+        "name": "SVGFECompositeElement",
+        "documentation": "",
+        "type": "{ new (): SVGFECompositeElement; prototype: SVGFECompositeElement; readonly SVG_FECOMPOSITE_OPERA..."
+    },
+    {
+        "name": "SVGFEConvolveMatrixElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEConvolveMatrixElement; prototype: SVGFEConvolveMatrixElement; readonly SVG_EDGEMOD..."
+    },
+    {
+        "name": "SVGFEDiffuseLightingElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEDiffuseLightingElement; prototype: SVGFEDiffuseLightingElement; }"
+    },
+    {
+        "name": "SVGFEDisplacementMapElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEDisplacementMapElement; prototype: SVGFEDisplacementMapElement; readonly SVG_CHANN..."
+    },
+    {
+        "name": "SVGFEDistantLightElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEDistantLightElement; prototype: SVGFEDistantLightElement; }"
+    },
+    {
+        "name": "SVGFEFloodElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEFloodElement; prototype: SVGFEFloodElement; }"
+    },
+    {
+        "name": "SVGFEFuncAElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEFuncAElement; prototype: SVGFEFuncAElement; }"
+    },
+    {
+        "name": "SVGFEFuncBElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEFuncBElement; prototype: SVGFEFuncBElement; }"
+    },
+    {
+        "name": "SVGFEFuncGElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEFuncGElement; prototype: SVGFEFuncGElement; }"
+    },
+    {
+        "name": "SVGFEFuncRElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEFuncRElement; prototype: SVGFEFuncRElement; }"
+    },
+    {
+        "name": "SVGFEGaussianBlurElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEGaussianBlurElement; prototype: SVGFEGaussianBlurElement; }"
+    },
+    {
+        "name": "SVGFEImageElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEImageElement; prototype: SVGFEImageElement; }"
+    },
+    {
+        "name": "SVGFEMergeElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEMergeElement; prototype: SVGFEMergeElement; }"
+    },
+    {
+        "name": "SVGFEMergeNodeElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEMergeNodeElement; prototype: SVGFEMergeNodeElement; }"
+    },
+    {
+        "name": "SVGFEMorphologyElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEMorphologyElement; prototype: SVGFEMorphologyElement; readonly SVG_MORPHOLOGY_OPER..."
+    },
+    {
+        "name": "SVGFEOffsetElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEOffsetElement; prototype: SVGFEOffsetElement; }"
+    },
+    {
+        "name": "SVGFEPointLightElement",
+        "documentation": "",
+        "type": "{ new (): SVGFEPointLightElement; prototype: SVGFEPointLightElement; }"
+    },
+    {
+        "name": "SVGFESpecularLightingElement",
+        "documentation": "",
+        "type": "{ new (): SVGFESpecularLightingElement; prototype: SVGFESpecularLightingElement; }"
+    },
+    {
+        "name": "SVGFESpotLightElement",
+        "documentation": "",
+        "type": "{ new (): SVGFESpotLightElement; prototype: SVGFESpotLightElement; }"
+    },
+    {
+        "name": "SVGFETileElement",
+        "documentation": "",
+        "type": "{ new (): SVGFETileElement; prototype: SVGFETileElement; }"
+    },
+    {
+        "name": "SVGFETurbulenceElement",
+        "documentation": "",
+        "type": "{ new (): SVGFETurbulenceElement; prototype: SVGFETurbulenceElement; readonly SVG_STITCHTYPE_NOST..."
+    },
+    {
+        "name": "SVGFilterElement",
+        "documentation": "",
+        "type": "{ new (): SVGFilterElement; prototype: SVGFilterElement; }"
+    },
+    {
+        "name": "SVGForeignObjectElement",
+        "documentation": "",
+        "type": "{ new (): SVGForeignObjectElement; prototype: SVGForeignObjectElement; }"
+    },
+    {
+        "name": "SVGGElement",
+        "documentation": "",
+        "type": "{ new (): SVGGElement; prototype: SVGGElement; }"
+    },
+    {
+        "name": "SVGGradientElement",
+        "documentation": "",
+        "type": "{ new (): SVGGradientElement; prototype: SVGGradientElement; readonly SVG_SPREADMETHOD_PAD: numbe..."
+    },
+    {
+        "name": "SVGGraphicsElement",
+        "documentation": "",
+        "type": "{ new (): SVGGraphicsElement; prototype: SVGGraphicsElement; }"
+    },
+    {
+        "name": "SVGImageElement",
+        "documentation": "",
+        "type": "{ new (): SVGImageElement; prototype: SVGImageElement; }"
+    },
+    {
+        "name": "SVGLength",
+        "documentation": "",
+        "type": "{ new (): SVGLength; prototype: SVGLength; readonly SVG_LENGTHTYPE_CM: number; readonly SVG_LENGT..."
+    },
+    {
+        "name": "SVGLengthList",
+        "documentation": "",
+        "type": "{ new (): SVGLengthList; prototype: SVGLengthList; }"
+    },
+    {
+        "name": "SVGLineElement",
+        "documentation": "",
+        "type": "{ new (): SVGLineElement; prototype: SVGLineElement; }"
+    },
+    {
+        "name": "SVGLinearGradientElement",
+        "documentation": "",
+        "type": "{ new (): SVGLinearGradientElement; prototype: SVGLinearGradientElement; }"
+    },
+    {
+        "name": "SVGMarkerElement",
+        "documentation": "",
+        "type": "{ new (): SVGMarkerElement; prototype: SVGMarkerElement; readonly SVG_MARKERUNITS_STROKEWIDTH: nu..."
+    },
+    {
+        "name": "SVGMaskElement",
+        "documentation": "",
+        "type": "{ new (): SVGMaskElement; prototype: SVGMaskElement; }"
+    },
+    {
+        "name": "SVGMatrix",
+        "documentation": "",
+        "type": "{ new (): SVGMatrix; prototype: SVGMatrix; }"
+    },
+    {
+        "name": "SVGMetadataElement",
+        "documentation": "",
+        "type": "{ new (): SVGMetadataElement; prototype: SVGMetadataElement; }"
+    },
+    {
+        "name": "SVGNumber",
+        "documentation": "",
+        "type": "{ new (): SVGNumber; prototype: SVGNumber; }"
+    },
+    {
+        "name": "SVGNumberList",
+        "documentation": "",
+        "type": "{ new (): SVGNumberList; prototype: SVGNumberList; }"
+    },
+    {
+        "name": "SVGPathElement",
+        "documentation": "",
+        "type": "{ new (): SVGPathElement; prototype: SVGPathElement; }"
+    },
+    {
+        "name": "SVGPathSeg",
+        "documentation": "",
+        "type": "{ new (): SVGPathSeg; prototype: SVGPathSeg; readonly PATHSEG_ARC_ABS: number; readonly PATHSEG_A..."
+    },
+    {
+        "name": "SVGPathSegArcAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegArcAbs; prototype: SVGPathSegArcAbs; }"
+    },
+    {
+        "name": "SVGPathSegArcRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegArcRel; prototype: SVGPathSegArcRel; }"
+    },
+    {
+        "name": "SVGPathSegClosePath",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegClosePath; prototype: SVGPathSegClosePath; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoCubicAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoCubicAbs; prototype: SVGPathSegCurvetoCubicAbs; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoCubicRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoCubicRel; prototype: SVGPathSegCurvetoCubicRel; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoCubicSmoothAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoCubicSmoothAbs; prototype: SVGPathSegCurvetoCubicSmoothAbs; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoCubicSmoothRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoCubicSmoothRel; prototype: SVGPathSegCurvetoCubicSmoothRel; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoQuadraticAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoQuadraticAbs; prototype: SVGPathSegCurvetoQuadraticAbs; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoQuadraticRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoQuadraticRel; prototype: SVGPathSegCurvetoQuadraticRel; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoQuadraticSmoothAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoQuadraticSmoothAbs; prototype: SVGPathSegCurvetoQuadraticSmoothAbs; }"
+    },
+    {
+        "name": "SVGPathSegCurvetoQuadraticSmoothRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegCurvetoQuadraticSmoothRel; prototype: SVGPathSegCurvetoQuadraticSmoothRel; }"
+    },
+    {
+        "name": "SVGPathSegLinetoAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegLinetoAbs; prototype: SVGPathSegLinetoAbs; }"
+    },
+    {
+        "name": "SVGPathSegLinetoHorizontalAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegLinetoHorizontalAbs; prototype: SVGPathSegLinetoHorizontalAbs; }"
+    },
+    {
+        "name": "SVGPathSegLinetoHorizontalRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegLinetoHorizontalRel; prototype: SVGPathSegLinetoHorizontalRel; }"
+    },
+    {
+        "name": "SVGPathSegLinetoRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegLinetoRel; prototype: SVGPathSegLinetoRel; }"
+    },
+    {
+        "name": "SVGPathSegLinetoVerticalAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegLinetoVerticalAbs; prototype: SVGPathSegLinetoVerticalAbs; }"
+    },
+    {
+        "name": "SVGPathSegLinetoVerticalRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegLinetoVerticalRel; prototype: SVGPathSegLinetoVerticalRel; }"
+    },
+    {
+        "name": "SVGPathSegList",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegList; prototype: SVGPathSegList; }"
+    },
+    {
+        "name": "SVGPathSegMovetoAbs",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegMovetoAbs; prototype: SVGPathSegMovetoAbs; }"
+    },
+    {
+        "name": "SVGPathSegMovetoRel",
+        "documentation": "",
+        "type": "{ new (): SVGPathSegMovetoRel; prototype: SVGPathSegMovetoRel; }"
+    },
+    {
+        "name": "SVGPatternElement",
+        "documentation": "",
+        "type": "{ new (): SVGPatternElement; prototype: SVGPatternElement; }"
+    },
+    {
+        "name": "SVGPoint",
+        "documentation": "",
+        "type": "{ new (): SVGPoint; prototype: SVGPoint; }"
+    },
+    {
+        "name": "SVGPointList",
+        "documentation": "",
+        "type": "{ new (): SVGPointList; prototype: SVGPointList; }"
+    },
+    {
+        "name": "SVGPolygonElement",
+        "documentation": "",
+        "type": "{ new (): SVGPolygonElement; prototype: SVGPolygonElement; }"
+    },
+    {
+        "name": "SVGPolylineElement",
+        "documentation": "",
+        "type": "{ new (): SVGPolylineElement; prototype: SVGPolylineElement; }"
+    },
+    {
+        "name": "SVGPreserveAspectRatio",
+        "documentation": "",
+        "type": "{ new (): SVGPreserveAspectRatio; prototype: SVGPreserveAspectRatio; readonly SVG_MEETORSLICE_MEE..."
+    },
+    {
+        "name": "SVGRadialGradientElement",
+        "documentation": "",
+        "type": "{ new (): SVGRadialGradientElement; prototype: SVGRadialGradientElement; }"
+    },
+    {
+        "name": "SVGRect",
+        "documentation": "",
+        "type": "{ new (): SVGRect; prototype: SVGRect; }"
+    },
+    {
+        "name": "SVGRectElement",
+        "documentation": "",
+        "type": "{ new (): SVGRectElement; prototype: SVGRectElement; }"
+    },
+    {
+        "name": "SVGSVGElement",
+        "documentation": "",
+        "type": "{ new (): SVGSVGElement; prototype: SVGSVGElement; }"
+    },
+    {
+        "name": "SVGScriptElement",
+        "documentation": "",
+        "type": "{ new (): SVGScriptElement; prototype: SVGScriptElement; }"
+    },
+    {
+        "name": "SVGStopElement",
+        "documentation": "",
+        "type": "{ new (): SVGStopElement; prototype: SVGStopElement; }"
+    },
+    {
+        "name": "SVGStringList",
+        "documentation": "",
+        "type": "{ new (): SVGStringList; prototype: SVGStringList; }"
+    },
+    {
+        "name": "SVGStyleElement",
+        "documentation": "",
+        "type": "{ new (): SVGStyleElement; prototype: SVGStyleElement; }"
+    },
+    {
+        "name": "SVGSwitchElement",
+        "documentation": "",
+        "type": "{ new (): SVGSwitchElement; prototype: SVGSwitchElement; }"
+    },
+    {
+        "name": "SVGSymbolElement",
+        "documentation": "",
+        "type": "{ new (): SVGSymbolElement; prototype: SVGSymbolElement; }"
+    },
+    {
+        "name": "SVGTSpanElement",
+        "documentation": "",
+        "type": "{ new (): SVGTSpanElement; prototype: SVGTSpanElement; }"
+    },
+    {
+        "name": "SVGTextContentElement",
+        "documentation": "",
+        "type": "{ new (): SVGTextContentElement; prototype: SVGTextContentElement; readonly LENGTHADJUST_SPACING:..."
+    },
+    {
+        "name": "SVGTextElement",
+        "documentation": "",
+        "type": "{ new (): SVGTextElement; prototype: SVGTextElement; }"
+    },
+    {
+        "name": "SVGTextPathElement",
+        "documentation": "",
+        "type": "{ new (): SVGTextPathElement; prototype: SVGTextPathElement; readonly TEXTPATH_METHODTYPE_ALIGN: ..."
+    },
+    {
+        "name": "SVGTextPositioningElement",
+        "documentation": "",
+        "type": "{ new (): SVGTextPositioningElement; prototype: SVGTextPositioningElement; }"
+    },
+    {
+        "name": "SVGTitleElement",
+        "documentation": "",
+        "type": "{ new (): SVGTitleElement; prototype: SVGTitleElement; }"
+    },
+    {
+        "name": "SVGTransform",
+        "documentation": "",
+        "type": "{ new (): SVGTransform; prototype: SVGTransform; readonly SVG_TRANSFORM_MATRIX: number; readonly ..."
+    },
+    {
+        "name": "SVGTransformList",
+        "documentation": "",
+        "type": "{ new (): SVGTransformList; prototype: SVGTransformList; }"
+    },
+    {
+        "name": "SVGUnitTypes",
+        "documentation": "",
+        "type": "SVGUnitTypes"
+    },
+    {
+        "name": "SVGUseElement",
+        "documentation": "",
+        "type": "{ new (): SVGUseElement; prototype: SVGUseElement; }"
+    },
+    {
+        "name": "SVGViewElement",
+        "documentation": "",
+        "type": "{ new (): SVGViewElement; prototype: SVGViewElement; }"
+    },
+    {
+        "name": "SVGZoomAndPan",
+        "documentation": "",
+        "type": "{ readonly SVG_ZOOMANDPAN_DISABLE: number; readonly SVG_ZOOMANDPAN_MAGNIFY: number; readonly SVG_..."
+    },
+    {
+        "name": "SVGZoomEvent",
+        "documentation": "",
+        "type": "{ new (): SVGZoomEvent; prototype: SVGZoomEvent; }"
+    },
+    {
+        "name": "ScopedCredential",
+        "documentation": "",
+        "type": "{ new (): ScopedCredential; prototype: ScopedCredential; }"
+    },
+    {
+        "name": "ScopedCredentialInfo",
+        "documentation": "",
+        "type": "{ new (): ScopedCredentialInfo; prototype: ScopedCredentialInfo; }"
+    },
+    {
+        "name": "Screen",
+        "documentation": "",
+        "type": "{ new (): Screen; prototype: Screen; }"
+    },
+    {
+        "name": "ScriptNotifyEvent",
+        "documentation": "",
+        "type": "{ new (): ScriptNotifyEvent; prototype: ScriptNotifyEvent; }"
+    },
+    {
+        "name": "ScriptProcessorNode",
+        "documentation": "",
+        "type": "{ new (): ScriptProcessorNode; prototype: ScriptProcessorNode; }"
+    },
+    {
+        "name": "Selection",
+        "documentation": "",
+        "type": "{ new (): Selection; prototype: Selection; }"
+    },
+    {
+        "name": "ServiceWorker",
+        "documentation": "",
+        "type": "{ new (): ServiceWorker; prototype: ServiceWorker; }"
+    },
+    {
+        "name": "ServiceWorkerContainer",
+        "documentation": "",
+        "type": "{ new (): ServiceWorkerContainer; prototype: ServiceWorkerContainer; }"
+    },
+    {
+        "name": "ServiceWorkerMessageEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: ServiceWorkerMessageEventInit): ServiceWorkerMessageEvent; p..."
+    },
+    {
+        "name": "ServiceWorkerRegistration",
+        "documentation": "",
+        "type": "{ new (): ServiceWorkerRegistration; prototype: ServiceWorkerRegistration; }"
+    },
+    {
+        "name": "SourceBuffer",
+        "documentation": "",
+        "type": "{ new (): SourceBuffer; prototype: SourceBuffer; }"
+    },
+    {
+        "name": "SourceBufferList",
+        "documentation": "",
+        "type": "{ new (): SourceBufferList; prototype: SourceBufferList; }"
+    },
+    {
+        "name": "SpeechSynthesis",
+        "documentation": "",
+        "type": "{ new (): SpeechSynthesis; prototype: SpeechSynthesis; }"
+    },
+    {
+        "name": "SpeechSynthesisEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: SpeechSynthesisEventInit): SpeechSynthesisEvent; prototype: ..."
+    },
+    {
+        "name": "SpeechSynthesisUtterance",
+        "documentation": "",
+        "type": "{ new (text?: string): SpeechSynthesisUtterance; prototype: SpeechSynthesisUtterance; }"
+    },
+    {
+        "name": "SpeechSynthesisVoice",
+        "documentation": "",
+        "type": "{ new (): SpeechSynthesisVoice; prototype: SpeechSynthesisVoice; }"
+    },
+    {
+        "name": "StereoPannerNode",
+        "documentation": "",
+        "type": "{ new (): StereoPannerNode; prototype: StereoPannerNode; }"
+    },
+    {
+        "name": "Storage",
+        "documentation": "",
+        "type": "{ new (): Storage; prototype: Storage; }"
+    },
+    {
+        "name": "StorageEvent",
+        "documentation": "",
+        "type": "{ new (type: string, eventInitDict?: StorageEventInit): StorageEvent; prototype: StorageEvent; }"
+    },
+    {
+        "name": "StyleMedia",
+        "documentation": "",
+        "type": "{ new (): StyleMedia; prototype: StyleMedia; }"
+    },
+    {
+        "name": "StyleSheet",
+        "documentation": "",
+        "type": "{ new (): StyleSheet; prototype: StyleSheet; }"
+    },
+    {
+        "name": "StyleSheetList",
+        "documentation": "",
+        "type": "{ new (): StyleSheetList; prototype: StyleSheetList; }"
+    },
+    {
+        "name": "StyleSheetPageList",
+        "documentation": "",
+        "type": "{ new (): StyleSheetPageList; prototype: StyleSheetPageList; }"
+    },
+    {
+        "name": "SubtleCrypto",
+        "documentation": "",
+        "type": "{ new (): SubtleCrypto; prototype: SubtleCrypto; }"
+    },
+    {
+        "name": "SyncManager",
+        "documentation": "",
+        "type": "{ new (): SyncManager; prototype: SyncManager; }"
+    },
+    {
+        "name": "Text",
+        "documentation": "",
+        "type": "{ new (data?: string): Text; prototype: Text; }"
+    },
+    {
+        "name": "TextEvent",
+        "documentation": "",
+        "type": "{ new (): TextEvent; prototype: TextEvent; readonly DOM_INPUT_METHOD_DROP: number; readonly DOM_I..."
+    },
+    {
+        "name": "TextMetrics",
+        "documentation": "",
+        "type": "{ new (): TextMetrics; prototype: TextMetrics; }"
+    },
+    {
+        "name": "TextTrack",
+        "documentation": "",
+        "type": "{ new (): TextTrack; prototype: TextTrack; readonly DISABLED: number; readonly ERROR: number; rea..."
+    },
+    {
+        "name": "TextTrackCue",
+        "documentation": "",
+        "type": "{ new (startTime: number, endTime: number, text: string): TextTrackCue; prototype: TextTrackCue; }"
+    },
+    {
+        "name": "TextTrackCueList",
+        "documentation": "",
+        "type": "{ new (): TextTrackCueList; prototype: TextTrackCueList; }"
+    },
+    {
+        "name": "TextTrackList",
+        "documentation": "",
+        "type": "{ new (): TextTrackList; prototype: TextTrackList; }"
+    },
+    {
+        "name": "TimeRanges",
+        "documentation": "",
+        "type": "{ new (): TimeRanges; prototype: TimeRanges; }"
+    },
+    {
+        "name": "Touch",
+        "documentation": "",
+        "type": "{ new (): Touch; prototype: Touch; }"
+    },
+    {
+        "name": "TouchEvent",
+        "documentation": "",
+        "type": "{ new (type: string, touchEventInit?: TouchEventInit): TouchEvent; prototype: TouchEvent; }"
+    },
+    {
+        "name": "TouchList",
+        "documentation": "",
+        "type": "{ new (): TouchList; prototype: TouchList; }"
+    },
+    {
+        "name": "TrackEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: TrackEventInit): TrackEvent; prototype: TrackEvent; }"
+    },
+    {
+        "name": "TransitionEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: TransitionEventInit): TransitionEvent; prototype: Transit..."
+    },
+    {
+        "name": "TreeWalker",
+        "documentation": "",
+        "type": "{ new (): TreeWalker; prototype: TreeWalker; }"
+    },
+    {
+        "name": "UIEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: UIEventInit): UIEvent; prototype: UIEvent; }"
+    },
+    {
+        "name": "URL",
+        "documentation": "",
+        "type": "{ new (url: string, base?: string): URL; prototype: URL; createObjectURL(object: any, options?: O..."
+    },
+    {
+        "name": "UnviewableContentIdentifiedEvent",
+        "documentation": "",
+        "type": "{ new (): UnviewableContentIdentifiedEvent; prototype: UnviewableContentIdentifiedEvent; }"
+    },
+    {
+        "name": "ValidityState",
+        "documentation": "",
+        "type": "{ new (): ValidityState; prototype: ValidityState; }"
+    },
+    {
+        "name": "VideoPlaybackQuality",
+        "documentation": "",
+        "type": "{ new (): VideoPlaybackQuality; prototype: VideoPlaybackQuality; }"
+    },
+    {
+        "name": "VideoTrack",
+        "documentation": "",
+        "type": "{ new (): VideoTrack; prototype: VideoTrack; }"
+    },
+    {
+        "name": "VideoTrackList",
+        "documentation": "",
+        "type": "{ new (): VideoTrackList; prototype: VideoTrackList; }"
+    },
+    {
+        "name": "WEBGL_compressed_texture_s3tc",
+        "documentation": "",
+        "type": "{ new (): WEBGL_compressed_texture_s3tc; prototype: WEBGL_compressed_texture_s3tc; readonly COMPR..."
+    },
+    {
+        "name": "WEBGL_debug_renderer_info",
+        "documentation": "",
+        "type": "{ new (): WEBGL_debug_renderer_info; prototype: WEBGL_debug_renderer_info; readonly UNMASKED_REND..."
+    },
+    {
+        "name": "WEBGL_depth_texture",
+        "documentation": "",
+        "type": "{ new (): WEBGL_depth_texture; prototype: WEBGL_depth_texture; readonly UNSIGNED_INT_24_8_WEBGL: ..."
+    },
+    {
+        "name": "WaveShaperNode",
+        "documentation": "",
+        "type": "{ new (): WaveShaperNode; prototype: WaveShaperNode; }"
+    },
+    {
+        "name": "WebAuthentication",
+        "documentation": "",
+        "type": "{ new (): WebAuthentication; prototype: WebAuthentication; }"
+    },
+    {
+        "name": "WebAuthnAssertion",
+        "documentation": "",
+        "type": "{ new (): WebAuthnAssertion; prototype: WebAuthnAssertion; }"
+    },
+    {
+        "name": "WebGLActiveInfo",
+        "documentation": "",
+        "type": "{ new (): WebGLActiveInfo; prototype: WebGLActiveInfo; }"
+    },
+    {
+        "name": "WebGLBuffer",
+        "documentation": "",
+        "type": "{ new (): WebGLBuffer; prototype: WebGLBuffer; }"
+    },
+    {
+        "name": "WebGLContextEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: WebGLContextEventInit): WebGLContextEvent; prototype: Web..."
+    },
+    {
+        "name": "WebGLFramebuffer",
+        "documentation": "",
+        "type": "{ new (): WebGLFramebuffer; prototype: WebGLFramebuffer; }"
+    },
+    {
+        "name": "WebGLObject",
+        "documentation": "",
+        "type": "{ new (): WebGLObject; prototype: WebGLObject; }"
+    },
+    {
+        "name": "WebGLProgram",
+        "documentation": "",
+        "type": "{ new (): WebGLProgram; prototype: WebGLProgram; }"
+    },
+    {
+        "name": "WebGLRenderbuffer",
+        "documentation": "",
+        "type": "{ new (): WebGLRenderbuffer; prototype: WebGLRenderbuffer; }"
+    },
+    {
+        "name": "WebGLRenderingContext",
+        "documentation": "",
+        "type": "{ new (): WebGLRenderingContext; prototype: WebGLRenderingContext; readonly ACTIVE_ATTRIBUTES: nu..."
+    },
+    {
+        "name": "WebGLShader",
+        "documentation": "",
+        "type": "{ new (): WebGLShader; prototype: WebGLShader; }"
+    },
+    {
+        "name": "WebGLShaderPrecisionFormat",
+        "documentation": "",
+        "type": "{ new (): WebGLShaderPrecisionFormat; prototype: WebGLShaderPrecisionFormat; }"
+    },
+    {
+        "name": "WebGLTexture",
+        "documentation": "",
+        "type": "{ new (): WebGLTexture; prototype: WebGLTexture; }"
+    },
+    {
+        "name": "WebGLUniformLocation",
+        "documentation": "",
+        "type": "{ new (): WebGLUniformLocation; prototype: WebGLUniformLocation; }"
+    },
+    {
+        "name": "WebKitCSSMatrix",
+        "documentation": "",
+        "type": "{ new (text?: string): WebKitCSSMatrix; prototype: WebKitCSSMatrix; }"
+    },
+    {
+        "name": "WebKitDirectoryEntry",
+        "documentation": "",
+        "type": "{ new (): WebKitDirectoryEntry; prototype: WebKitDirectoryEntry; }"
+    },
+    {
+        "name": "WebKitDirectoryReader",
+        "documentation": "",
+        "type": "{ new (): WebKitDirectoryReader; prototype: WebKitDirectoryReader; }"
+    },
+    {
+        "name": "WebKitEntry",
+        "documentation": "",
+        "type": "{ new (): WebKitEntry; prototype: WebKitEntry; }"
+    },
+    {
+        "name": "WebKitFileEntry",
+        "documentation": "",
+        "type": "{ new (): WebKitFileEntry; prototype: WebKitFileEntry; }"
+    },
+    {
+        "name": "WebKitFileSystem",
+        "documentation": "",
+        "type": "{ new (): WebKitFileSystem; prototype: WebKitFileSystem; }"
+    },
+    {
+        "name": "WebKitPoint",
+        "documentation": "",
+        "type": "{ new (x?: number, y?: number): WebKitPoint; prototype: WebKitPoint; }"
+    },
+    {
+        "name": "WebSocket",
+        "documentation": "",
+        "type": "{ new (url: string, protocols?: string | string[]): WebSocket; prototype: WebSocket; readonly CLO..."
+    },
+    {
+        "name": "WheelEvent",
+        "documentation": "",
+        "type": "{ new (typeArg: string, eventInitDict?: WheelEventInit): WheelEvent; prototype: WheelEvent; reado..."
+    },
+    {
+        "name": "Window",
+        "documentation": "",
+        "type": "{ new (): Window; prototype: Window; }"
+    },
+    {
+        "name": "Worker",
+        "documentation": "",
+        "type": "{ new (stringUrl: string): Worker; prototype: Worker; }"
+    },
+    {
+        "name": "XMLDocument",
+        "documentation": "",
+        "type": "{ new (): XMLDocument; prototype: XMLDocument; }"
+    },
+    {
+        "name": "XMLHttpRequest",
+        "documentation": "",
+        "type": "{ new (): XMLHttpRequest; prototype: XMLHttpRequest; readonly DONE: number; readonly HEADERS_RECE..."
+    },
+    {
+        "name": "XMLHttpRequestUpload",
+        "documentation": "",
+        "type": "{ new (): XMLHttpRequestUpload; prototype: XMLHttpRequestUpload; }"
+    },
+    {
+        "name": "XMLSerializer",
+        "documentation": "",
+        "type": "{ new (): XMLSerializer; prototype: XMLSerializer; }"
+    },
+    {
+        "name": "XPathEvaluator",
+        "documentation": "",
+        "type": "{ new (): XPathEvaluator; prototype: XPathEvaluator; }"
+    },
+    {
+        "name": "XPathExpression",
+        "documentation": "",
+        "type": "{ new (): XPathExpression; prototype: XPathExpression; }"
+    },
+    {
+        "name": "XPathNSResolver",
+        "documentation": "",
+        "type": "{ new (): XPathNSResolver; prototype: XPathNSResolver; }"
+    },
+    {
+        "name": "XPathResult",
+        "documentation": "",
+        "type": "{ new (): XPathResult; prototype: XPathResult; readonly ANY_TYPE: number; readonly ANY_UNORDERED_..."
+    },
+    {
+        "name": "XSLTProcessor",
+        "documentation": "",
+        "type": "{ new (): XSLTProcessor; prototype: XSLTProcessor; }"
+    },
+    {
+        "name": "webkitRTCPeerConnection",
+        "documentation": "",
+        "type": "{ new (configuration: RTCConfiguration): webkitRTCPeerConnection; prototype: webkitRTCPeerConnect..."
+    },
+    {
+        "name": "URLSearchParams",
+        "documentation": "",
+        "type": "{ new (init?: string | URLSearchParams): URLSearchParams; prototype: URLSearchParams; }"
+    },
+    {
+        "name": "ActiveXObject",
+        "documentation": "",
+        "type": "ActiveXObject"
+    },
+    {
+        "name": "Enumerator",
+        "documentation": "Allows enumerating over a COM collection, which may not have indexed item access.",
+        "type": "EnumeratorConstructor"
+    },
+    {
+        "name": "VBArray",
+        "documentation": "Enables reading from a COM safe array, which might have an alternate lower bound, or multiple dimensions.",
+        "type": "VBArrayConstructor"
+    },
+    {
+        "name": "Date",
+        "documentation": "Enables basic storage and retrieval of dates and times. ",
+        "type": "DateConstructor"
+    },
+    {
+        "name": "Console",
+        "documentation": "",
+        "type": "{ new (): Console; prototype: Console; }"
+    },
+    {
+        "name": "Error",
+        "documentation": "",
+        "type": "ErrorConstructor"
+    },
+    {
+        "name": "Buffer",
+        "documentation": "Raw data is stored in instances of the Buffer class.\nA Buffer is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap.  A Buffer cannot be resized.\nValid string encodings: 'ascii'|'utf8'|'utf16le'|'ucs2'(alias of 'utf16le')|'base64'|'binary'(deprecated)|'hex'",
+        "type": "{ new (str: string, encoding?: string): Buffer; new (size: number): Buffer; new (array: Uint8Arra..."
+    }
+]

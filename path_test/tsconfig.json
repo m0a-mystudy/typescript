@@ -5,9 +5,6 @@
         "rootDir": "src",
         "baseUrl": "src",
         "outDir": "dist",
-        "paths": {
-            "/deep/*":["deep/*"]
-        },
         "noImplicitAny": false,
         "sourceMap": false
     }
