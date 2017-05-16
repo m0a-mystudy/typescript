@@ -11,11 +11,8 @@ import { TranslationEditor } from './components/TranslationEditor';
 import { TranslationEditorState } from './reducers/translationEditor';
 
 import Debug from '../Debug';
-// import {  asyncCountUp, asyncCountDown } from './actions/count';
-// import reducer from './reducers';
 import { CountState } from './reducers/count';
 import * as ReactRedux from 'react-redux';
-// import * as Redux from 'redux';
 
 import { sample } from '../pegjs.sample';
 import { newContent } from 'taiyaku-node';
