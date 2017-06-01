@@ -1,0 +1,216 @@
+======== Resolving module 'react' from 'XXXX/mytypes/react-lazyload/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'react' from 'node_modules' folder, target file type 'TypeScript'.
+Directory 'XXXX/mytypes/react-lazyload/node_modules' does not exist, skipping all lookups in it.
+Directory 'XXXX/mytypes/node_modules' does not exist, skipping all lookups in it.
+File 'XXXX/node_modules/react.ts' does not exist.
+File 'XXXX/node_modules/react.tsx' does not exist.
+File 'XXXX/node_modules/react.d.ts' does not exist.
+Found 'package.json' at 'XXXX/node_modules/react/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/react/index.ts' does not exist.
+File 'XXXX/node_modules/react/index.tsx' does not exist.
+File 'XXXX/node_modules/react/index.d.ts' does not exist.
+File 'XXXX/node_modules/@types/react.d.ts' does not exist.
+Found 'package.json' at 'XXXX/node_modules/@types/react/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/@types/react/index.d.ts' exist - use it as a name resolution result.
+○ Resolving real path for 'XXXX/node_modules/@types/react/index.d.ts', result 'XXXX/node_modules/@types/react/index.d.ts'.
+
+======== Module name 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts'. ========
+
+======== Resolving module 'react' from 'XXXX/src/App.test.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'react' from 'node_modules' folder, target file type 'TypeScript'.
+Directory 'XXXX/src/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'react' was found in cache.
+Resolving real path for 'XXXX/node_modules/@types/react/index.d.ts', result 'XXXX/node_modules/@types/react/index.d.ts'.
+======== Module name 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts'. ========
+
+======== Resolving module 'react-dom' from 'XXXX/src/App.test.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'react-dom' from 'node_modules' folder, target file type 'TypeScript'.
+Directory 'XXXX/src/node_modules' does not exist, skipping all lookups in it.
+File 'XXXX/node_modules/react-dom.ts' does not exist.
+File 'XXXX/node_modules/react-dom.tsx' does not exist.
+File 'XXXX/node_modules/react-dom.d.ts' does not exist.
+Found 'package.json' at 'XXXX/node_modules/react-dom/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/react-dom/index.ts' does not exist.
+File 'XXXX/node_modules/react-dom/index.tsx' does not exist.
+File 'XXXX/node_modules/react-dom/index.d.ts' does not exist.
+File 'XXXX/node_modules/@types/react-dom.d.ts' does not exist.
+Found 'package.json' at 'XXXX/node_modules/@types/react-dom/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/@types/react-dom/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/node_modules/@types/react-dom/index.d.ts', result 'XXXX/node_modules/@types/react-dom/index.d.ts'.
+======== Module name 'react-dom' was successfully resolved to 'XXXX/node_modules/@types/react-dom/index.d.ts'. ========
+
+
+======== Resolving module './App' from 'XXXX/src/App.test.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module as file / folder, candidate module location 'XXXX/src/App', target file type 'TypeScript'.
+File 'XXXX/src/App.ts' does not exist.
+File 'XXXX/src/App.tsx' exist - use it as a name resolution result.
+======== Module name './App' was successfully resolved to 'XXXX/src/App.tsx'. ========
+
+======== Resolving module 'react' from 'XXXX/node_modules/@types/react-dom/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'react' from 'node_modules' folder, target file type 'TypeScript'.
+Directory 'XXXX/node_modules/@types/react-dom/node_modules' does not exist, skipping all lookups in it.
+Directory 'XXXX/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'react' was found in cache.
+Resolving real path for 'XXXX/node_modules/@types/react/index.d.ts', result 'XXXX/node_modules/@types/react/index.d.ts'.
+======== Module name 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts'. ========
+
+
+======== Resolving module 'react' from 'XXXX/src/App.tsx'. ========
+Resolution for module 'react' was found in cache.
+======== Module name 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts'. ========
+
+======== Resolving module './App.css' from 'XXXX/src/App.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module as file / folder, candidate module location 'XXXX/src/App.css', target file type 'TypeScript'.
+File 'XXXX/src/App.css.ts' does not exist.
+File 'XXXX/src/App.css.tsx' does not exist.
+File 'XXXX/src/App.css.d.ts' does not exist.
+Directory 'XXXX/src/App.css' does not exist, skipping all lookups in it.
+Loading module as file / folder, candidate module location 'XXXX/src/App.css', target file type 'JavaScript'.
+File 'XXXX/src/App.css.js' does not exist.
+File 'XXXX/src/App.css.jsx' does not exist.
+Directory 'XXXX/src/App.css' does not exist, skipping all lookups in it.
+======== Module name './App.css' was not resolved. ========
+
+
+======== Resolving module 'react-lazyload' from 'XXXX/src/App.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'react-lazyload' from 'node_modules' folder, target file type 'TypeScript'.
+Directory 'XXXX/src/node_modules' does not exist, skipping all lookups in it.
+File 'XXXX/node_modules/react-lazyload.ts' does not exist.
+File 'XXXX/node_modules/react-lazyload.tsx' does not exist.
+File 'XXXX/node_modules/react-lazyload.d.ts' does not exist.
+Found 'package.json' at 'XXXX/node_modules/react-lazyload/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/react-lazyload/index.ts' does not exist.
+File 'XXXX/node_modules/react-lazyload/index.tsx' does not exist.
+File 'XXXX/node_modules/react-lazyload/index.d.ts' does not exist.
+File 'XXXX/node_modules/@types/react-lazyload.d.ts' does not exist.
+Directory '/Users/m0a/repo/github.com/m0a-mystudy/typescript/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/m0a/repo/github.com/m0a-mystudy/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/m0a/repo/github.com/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/m0a/repo/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/m0a/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'react-lazyload' from 'node_modules' folder, target file type 'JavaScript'.
+Directory 'XXXX/src/node_modules' does not exist, skipping all lookups in it.
+File 'XXXX/node_modules/react-lazyload.js' does not exist.
+File 'XXXX/node_modules/react-lazyload.jsx' does not exist.
+Found 'package.json' at 'XXXX/node_modules/react-lazyload/package.json'.
+'package.json' has 'main' field 'lib/index.js' that references 'XXXX/node_modules/react-lazyload/lib/index.js'.
+File 'XXXX/node_modules/react-lazyload/lib/index.js' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/node_modules/react-lazyload/lib/index.js', result 'XXXX/node_modules/react-lazyload/lib/index.js'.
+======== Module name 'react-lazyload' was successfully resolved to 'XXXX/node_modules/react-lazyload/lib/index.js'. ========
+
+
+======== Resolving module 'react' from 'XXXX/src/index.tsx'. ========
+Resolution for module 'react' was found in cache.
+======== Module name 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts'. ========
+
+
+======== Resolving module 'react-dom' from 'XXXX/src/index.tsx'. ========
+Resolution for module 'react-dom' was found in cache.
+======== Module name 'react-dom' was successfully resolved to 'XXXX/node_modules/@types/react-dom/index.d.ts'. ========
+
+
+======== Resolving module './App' from 'XXXX/src/index.tsx'. ========
+Resolution for module './App' was found in cache.
+======== Module name './App' was successfully resolved to 'XXXX/src/App.tsx'. ========
+
+======== Resolving module './registerServiceWorker' from 'XXXX/src/index.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module as file / folder, candidate module location 'XXXX/src/registerServiceWorker', target file type 'TypeScript'.
+
+File 'XXXX/src/registerServiceWorker.ts' exist - use it as a name resolution result.
+======== Module name './registerServiceWorker' was successfully resolved to 'XXXX/src/registerServiceWorker.ts'. ========
+
+======== Resolving module './index.css' from 'XXXX/src/index.tsx'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module as file / folder, candidate module location 'XXXX/src/index.css', target file type 'TypeScript'.
+File 'XXXX/src/index.css.ts' does not exist.
+File 'XXXX/src/index.css.tsx' does not exist.
+File 'XXXX/src/index.css.d.ts' does not exist.
+Directory 'XXXX/src/index.css' does not exist, skipping all lookups in it.
+Loading module as file / folder, candidate module location 'XXXX/src/index.css', target file type 'JavaScript'.
+File 'XXXX/src/index.css.js' does not exist.
+File 'XXXX/src/index.css.jsx' does not exist.
+Directory 'XXXX/src/index.css' does not exist, skipping all lookups in it.
+======== Module name './index.css' was not resolved. ========
+
+
+======== Resolving type reference directive 'react-lazyload', containing file 'XXXX/__inferred type names__.ts', root directory 'XXXX/mytypes,XXXX/node_modules/@types'. ========
+Resolving with primary search path 'XXXX/mytypes, XXXX/node_modules/@types'.
+Found 'package.json' at 'XXXX/mytypes/react-lazyload/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references 'XXXX/mytypes/react-lazyload/index.d.ts'.
+File 'XXXX/mytypes/react-lazyload/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/mytypes/react-lazyload/index.d.ts', result 'XXXX/mytypes/react-lazyload/index.d.ts'.
+======== Type reference directive 'react-lazyload' was successfully resolved to 'XXXX/mytypes/react-lazyload/index.d.ts', primary: true. ========
+
+
+======== Resolving type reference directive 'jest', containing file 'XXXX/__inferred type names__.ts', root directory 'XXXX/mytypes,XXXX/node_modules/@types'. ========
+Resolving with primary search path 'XXXX/mytypes, XXXX/node_modules/@types'.
+Found 'package.json' at 'XXXX/node_modules/@types/jest/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/@types/jest/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/node_modules/@types/jest/index.d.ts', result 'XXXX/node_modules/@types/jest/index.d.ts'.
+======== Type reference directive 'jest' was successfully resolved to 'XXXX/node_modules/@types/jest/index.d.ts', primary: true. ========
+
+
+======== Resolving type reference directive 'node', containing file 'XXXX/__inferred type names__.ts', root directory 'XXXX/mytypes,XXXX/node_modules/@types'. ========
+Resolving with primary search path 'XXXX/mytypes, XXXX/node_modules/@types'.
+Found 'package.json' at 'XXXX/node_modules/@types/node/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/@types/node/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/node_modules/@types/node/index.d.ts', result 'XXXX/node_modules/@types/node/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to 'XXXX/node_modules/@types/node/index.d.ts', primary: true. ========
+
+
+======== Resolving type reference directive 'react', containing file 'XXXX/__inferred type names__.ts', root directory 'XXXX/mytypes,XXXX/node_modules/@types'. ========
+Resolving with primary search path 'XXXX/mytypes, XXXX/node_modules/@types'.
+Found 'package.json' at 'XXXX/node_modules/@types/react/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/@types/react/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/node_modules/@types/react/index.d.ts', result 'XXXX/node_modules/@types/react/index.d.ts'.
+======== Type reference directive 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts', primary: true. ========
+
+
+======== Resolving type reference directive 'react-dom', containing file 'XXXX/__inferred type names__.ts', root directory 'XXXX/mytypes,XXXX/node_modules/@types'. ========
+Resolving with primary search path 'XXXX/mytypes, XXXX/node_modules/@types'.
+Found 'package.json' at 'XXXX/node_modules/@types/react-dom/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File 'XXXX/node_modules/@types/react-dom/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for 'XXXX/node_modules/@types/react-dom/index.d.ts', result 'XXXX/node_modules/@types/react-dom/index.d.ts'.
+======== Type reference directive 'react-dom' was successfully resolved to 'XXXX/node_modules/@types/react-dom/index.d.ts', primary: true. ========
+
+
+
+======== Resolving module 'react' from 'XXXX/node_modules/@types/react-dom/index.d.ts'. ========
+Resolution for module 'react' was found in cache.
+
+
+======== Module name 'react' was successfully resolved to 'XXXX/node_modules/@types/react/index.d.ts'. ========
+
+
+!!
+
+src/App.tsx(3,22): error TS7016: Could not find a declaration file for module 'react-lazyload'. 'XXXX/node_modules/react-lazyload/lib/index.js' implicitly has an 'any' type.
