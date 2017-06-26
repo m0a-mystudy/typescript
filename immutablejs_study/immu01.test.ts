@@ -1,4 +1,4 @@
-import { Record, List,is } from 'immutable';
+import { Record, List, is } from 'immutable';
 
 
 
@@ -7,42 +7,38 @@ interface AI {
 }
 
 const ARecord = Record(<AI>{
-	num:0,
-	num2:1,
-	bool:true
+	num: 0
 })
 
 class A extends ARecord implements AI {
 	num: number;
-	num2:number;
-	bool: boolean;
 }
 
-//-------
-interface HaveListI {
+interface BI {
 	num: number;
-	str: string;
-	contents:A[]
+	contents: List<A>
 }
 
-const HaveListRecord = Record(<HaveListI>{
+const BRecord = Record(<BI>{
 	num: 0,
-	str: "",
-	contents:[]
+	contents: List<A>()
 });
 
-class HaveList extends HaveListRecord implements HaveListI {
+class B extends BRecord implements BI {
 	num: number;
-	str: string;
-	contents:A[];
+	contents: List<A>;
+	constructor({num, contents}:{num:number, contents?:AI[]}) {
+		if (contents)
+		super({num, contents:List<A>(contents.map(a=>new A(a)))})
+		else 
+		super({num, contents:List<A>()})
+	}
 }
-//---
 
-it('HaveList test', () => {
-	let haveList = new HaveList({num:12,str:'hello',contents:[{num:1,num2:2,bool:false},{num:2,num3:4,boo:true}]})
-	haveList = <HaveList>haveList.setIn(['num'],13);
-	haveList = <HaveList>haveList.setIn(['contents','0','num1'],13);
-	let haveList2 = new HaveList({num:12,str:'hello'})
-	// const result = is(haveList,haveList2)
-	expect(haveList).toEqual(haveList2);
+
+it('B test', () => {
+	let b = new B({ num: 12, contents: [{ num: 1 }, { num: 2 }] })
+	b = <B>b.updateIn(['contents',0], (num:A) => new A({num:42}))
+	let b2 = new B({ num: 12, contents: [{ num: 42 }, { num: 2 }] })
+	expect(b).toEqual(b2);
 })
