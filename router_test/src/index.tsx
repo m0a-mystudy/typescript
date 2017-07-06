@@ -4,16 +4,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
+import RootReducer from './reducers';
 
-const initState = {
-  test: 'test'
-};
-
-let nothing = (state: {} = initState, action = {}) => {
-  return state;
-};
-
-let store = createStore(nothing);
+let store = createStore(RootReducer);
 ReactDOM.render(
   <Provider store={store}>
     <App />

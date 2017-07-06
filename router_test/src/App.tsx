@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Link, withRouter} from 'react-router-dom
 import {RouteComponentProps} from 'react-router';
 import {connect} from 'react-redux';
 
+import One from './components/one';
 interface TestProps extends RouteComponentProps<{}> { 
   state: Object;
 }
@@ -24,12 +25,14 @@ class App extends React.Component<{}, {}> {
   render() {
     return (
       <div className="App">
-        
+        <One />
         <Router>
           <div>
           <a> <Link to={'/'} >Index</Link></a>
           <a> <Link to={'/about'} >about</Link></a>
           <a> <Link to={'/access'} >access</Link></a>
+          <a> <Link to={'/one'} >one</Link></a>
+
           <Route exact={true} path={'/'} component={Index} />
           <Route  path={'/about'} component={About} />
           <Route  path={'/access'} component={ReduxAccessWithRouter} />
