@@ -1,4 +1,7 @@
-# 参考図書
+# 学習内容のまとめです。
 
-[2016年版 Node.jsで幸せになれる10の習慣](http://qiita.com/ksato9700/items/b21383e613b6dc308dca)
+ちょっと後から追加したのでフォローしきれてないのはご勘弁下さい
 
+
+# jest-line-number
+ts-jestの行番号検証

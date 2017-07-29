@@ -1,0 +1,32 @@
+{
+  "name": "jest-line-number",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  },
+  "author": "m0a",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^20.0.5",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7"
+  }
+}
