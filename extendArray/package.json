@@ -1,0 +1,30 @@
+{
+  "name": "extendarray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "author": "m0a",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "21.1.2",
+    "@types/lodash": "4.14.77",
+    "lodash": "4.17.4",
+    "ts-jest": "21.1.0"
+  }
+}
