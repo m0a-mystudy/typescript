@@ -16,17 +16,20 @@ import {
     }
   }
   
-  export class Users  {
-    list: Array<User|undefined>;
+  export class Users extends Array<User|undefined> {
     constructor() {
-        this.list = [];
+        super()
     }
     public setUser(user: User | undefined) {
-        let users = this.list;
+        let users = <Array<User|undefined>> this;
         users.push(user);
         users = remove(users, undefined); 
         users = uniqBy(users,'id')
         users = orderBy(users, ['created_at'],['asc'])
-        this.list = users;
+        
+        for(let a of <Array<User|undefined>> this) {
+            console.log(a)
+        }
+        // this.list = users;
     }
   }
